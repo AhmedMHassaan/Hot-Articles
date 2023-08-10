@@ -1,0 +1,90 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.dagger.hilt.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    namespace 'com.ahmedmhassaan.data'
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 21
+
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    kapt {
+        correctErrorTypes true
+    }
+
+}
+
+dependencies {
+
+    implementation project(path: ':domain')
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+
+    implementation 'com.android.support:multidex:1.0.3'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0' // Retrofit
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0' // Gson Converter
+    implementation 'com.google.code.gson:gson:2.10.1'  // gson
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'  // RxJavaAdapter with Retrofit
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.11'
+    // Retrofit logging intercept
+
+    implementation "com.google.dagger:hilt-android:2.47" // for hilt di
+    kapt "com.google.dagger:hilt-compiler:2.47" // hilt di
+
+    def room_version = '2.5.2'   // for room
+    implementation "androidx.room:room-runtime:$room_version" // room
+    kapt "androidx.room:room-compiler:$room_version" // room compiler
+    implementation "androidx.room:room-rxjava2:$room_version" // room rxJava
+
+
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'com.google.truth:truth:1.1.4'
+    testImplementation 'com.google.dagger:hilt-android-testing:2.44'
+
+    kaptTest 'com.google.dagger:hilt-android-compiler:2.44'
+    testAnnotationProcessor 'com.google.dagger:hilt-android-compiler:2.44'
+
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'com.google.truth:truth:1.1.4'
+    androidTestImplementation 'com.google.dagger:hilt-android-testing:2.44'
+    kaptAndroidTest 'com.google.dagger:hilt-android-compiler:2.44'
+    androidTestAnnotationProcessor 'com.google.dagger:hilt-android-compiler:2.44'
+
+}
