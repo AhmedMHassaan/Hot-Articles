@@ -74,7 +74,7 @@ dependencies {
 
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'com.google.truth:truth:1.1.4'
-    testImplementation 'com.google.dagger:hilt-android-testing:2.44'
+    testImplementation 'com.google.dagger:hilt-android-testing:2.47'
 
     kaptTest 'com.google.dagger:hilt-android-compiler:2.47'
     testAnnotationProcessor 'com.google.dagger:hilt-android-compiler:2.47'

@@ -6,10 +6,8 @@ interface ArticlesRepository {
 
     suspend fun searchForArticles(
         query: String,
-        pageSize: Int,
         pageNumber: Int,
         from: String,
-        sortBy: String,
         language: String
     ): List<DomainArticle>
 }

@@ -6,7 +6,6 @@ interface LocalArticlesRepository {
 
     suspend fun loadCashedArticles(
         currentPage: Int,
-        pageSize: Int,
         language: String
     ): List<DomainArticle>
 
@@ -15,4 +14,6 @@ interface LocalArticlesRepository {
     suspend fun addArticleToFav(article: DomainArticle): Boolean
 
     suspend fun removeArticleFromFav(article: DomainArticle): Boolean
+
+    suspend fun cacheArticles(request: List<DomainArticle>)
 }
