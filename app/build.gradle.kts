@@ -57,6 +57,7 @@ dependencies {
 //    implementation(project(path = ":data", configuration = "default"))
     implementation(project(":domain"))
     implementation(project(":data"))
+    implementation(project(":core"))
 
     implementation("androidx.core:core-ktx:1.10.1")
     implementation("androidx.appcompat:appcompat:1.6.1")
