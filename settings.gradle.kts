@@ -3,6 +3,11 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
+        maven(url = "https://jitpack.io")
+
+        /*maven{
+            url = uri("https://jitpack.io")
+        }*/
     }
 }
 dependencyResolutionManagement {
@@ -10,6 +15,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven(url = "https://jitpack.io")
+
+
     }
 }
 
@@ -17,3 +25,4 @@ rootProject.name = "OrangeTask"
 include(":app")
 include(":data")
 include(":domain")
+include(":core")

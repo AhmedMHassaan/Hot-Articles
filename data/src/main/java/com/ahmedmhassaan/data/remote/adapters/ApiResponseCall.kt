@@ -67,7 +67,7 @@ class ApiResponseCall<T>(
         val throwable = when {
             errorBody != null -> ApiThrowable(errorBody.error, code)
             code == HttpURLConnection.HTTP_NOT_AUTHORITATIVE -> UnauthorizedThrowable()
-            else -> IllegalStateException()
+            else -> IllegalStateException("Error With Code $code")
         }
         callback.onResponse(this, Response.success(Result.failure(throwable)))
     }
