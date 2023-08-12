@@ -25,29 +25,29 @@ class FragmentSearch : BaseBindFragment<FragmentSearchBinding>() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
+        observeViewModel()
         setupRecycler()
         events()
-        observeViewModel()
 
     }
 
     private fun observeViewModel() {
-        searchViewModel.apply {
-            searchResultLiveData.observe(viewLifecycleOwner) {
-                articlesAdapter.submitData(lifecycle, it)
-            }
 
-            error.observe(viewLifecycleOwner) {
-                showAlertDialog(
-                    title = getString(R.string.error),
-                    msg = it,
-                )
-            }
-
-            progress.observe(viewLifecycleOwner) {
-                binding.recViewArticles.setLoading(isLoading = it)
-            }
+        searchViewModel.searchResultLiveData.observe(viewLifecycleOwner) {
+            articlesAdapter.submitData(lifecycle, it)
         }
+
+        searchViewModel.error.observe(viewLifecycleOwner) {
+            showAlertDialog(
+                title = getString(R.string.error),
+                msg = it,
+            )
+        }
+
+        searchViewModel.progress.observe(viewLifecycleOwner) {
+            binding.recViewArticles.setLoading(isLoading = it)
+        }
+
     }
 
     private fun events() {
