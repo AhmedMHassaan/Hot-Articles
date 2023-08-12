@@ -10,8 +10,6 @@ interface LocalCacheArticlesRepository {
     ): List<DomainArticle>
 
 
-    suspend fun addArticleToFav(article: DomainArticle): Boolean
-
 
     suspend fun cacheArticles(request: List<DomainArticle>)
 }

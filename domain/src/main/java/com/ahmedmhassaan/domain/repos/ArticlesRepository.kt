@@ -6,6 +6,5 @@ import kotlinx.coroutines.flow.Flow
 
 interface ArticlesRepository {
 
-    suspend fun searchForArticles(
-    ): Flow<PagingData<DomainArticle>>
+    suspend fun searchForArticles(query: String): Flow<PagingData<DomainArticle>>
 }

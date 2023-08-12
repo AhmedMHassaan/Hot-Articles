@@ -10,7 +10,7 @@ data class ArticleEntity(
     val id: Int?,
     val title: String,
     val description: String,
-    val author: String,
+    val author: String?,
     val url: String,
     val source: String,
     val content: String,

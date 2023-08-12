@@ -25,15 +25,38 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent=".95" />
 
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/settingsLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_1sdp"
+            app:layout_constraintBottom_toBottomOf="@id/searchLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/searchLayout"
+            app:layout_constraintWidth_percent=".1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_settings" />
+        </com.google.android.material.card.MaterialCardView>
+
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/searchLayout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
             app:cardCornerRadius="@dimen/_15sdp"
             app:cardElevation="@dimen/_1sdp"
-            app:layout_constraintEnd_toStartOf="@id/endGuide"
+            app:layout_constraintEnd_toStartOf="@id/settingsLayout"
             app:layout_constraintStart_toEndOf="@id/startGuide"
             app:layout_constraintTop_toTopOf="parent"
             app:strokeColor="@color/black_50"
@@ -42,7 +65,9 @@
             <androidx.appcompat.widget.SearchView
                 android:id="@+id/txtSearch"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:iconifiedByDefault="false" />
+
 
         </com.google.android.material.card.MaterialCardView>
 
@@ -55,7 +80,9 @@
             app:layout_constraintEnd_toStartOf="@id/endGuide"
             app:layout_constraintStart_toEndOf="@id/startGuide"
             app:layout_constraintTop_toBottomOf="@id/searchLayout"
-            app:shimmer_demo_child_count="2"
+            app:shimmer_demo_child_count="8"
+            app:shimmer_demo_angle="45"
+            app:shimmer_demo_grid_child_count="2"
             app:shimmer_demo_layout="@layout/item_news_placeholder"
             app:shimmer_demo_layout_manager_type="grid"
             tools:itemCount="10"

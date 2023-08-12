@@ -1,9 +1,7 @@
 package com.ahmedmhassaan.data.remote.adapters
 
 import android.accounts.NetworkErrorException
-
-import com.ahmedmhassaan.data.model.BaseApiError
-import com.ahmedmhassaan.data.throwables.ApiThrowable
+import com.ahmedmhassaan.data.throwables.HostApiError
 import com.ahmedmhassaan.data.throwables.UnauthorizedThrowable
 import com.google.gson.Gson
 import okhttp3.Request
@@ -65,19 +63,20 @@ class ApiResponseCall<T>(
     private fun onError(callback: Callback<Result<T>>, error: ResponseBody?, code: Int) {
         val errorBody = tryConvertErrorBody(error)
         val throwable = when {
-            errorBody != null -> ApiThrowable(errorBody.error, code)
             code == HttpURLConnection.HTTP_NOT_AUTHORITATIVE -> UnauthorizedThrowable()
+            errorBody != null -> errorBody
             else -> IllegalStateException("Error With Code $code")
         }
         callback.onResponse(this, Response.success(Result.failure(throwable)))
     }
 
-    private fun tryConvertErrorBody(error: ResponseBody?): BaseApiError? {
+    private fun tryConvertErrorBody(error: ResponseBody?): HostApiError? {
         return when {
             error == null -> null
             error.contentLength() == 0L -> null
             else -> try {
-                Gson().fromJson(error.string(), BaseApiError::class.java)
+//                Gson().fromJson(error.string(), BaseApiError::class.java)
+                Gson().fromJson(error.string(), HostApiError::class.java)
             } catch (ex: Exception) {
                 null
             }

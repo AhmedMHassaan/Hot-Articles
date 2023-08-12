@@ -9,10 +9,9 @@ import javax.inject.Inject
 
 class RemoteArticlesDataSource @Inject constructor(
     private val articleService: ArticleService,
-    private val query: String
 ) {
 
-    suspend fun search() =
+    suspend fun search(query: String) =
         Pager(
             config = PagingConfig(
                 pageSize = 20,
@@ -23,6 +22,5 @@ class RemoteArticlesDataSource @Inject constructor(
                 ArticlesPagingDataSource(service = articleService, query = query)
             },
 
-
-            )
+            ).flow
 }

@@ -34,8 +34,7 @@
                 android:scaleType="centerCrop"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:src="@mipmap/ic_launcher" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <View
                 android:id="@+id/tvTitle"
@@ -54,35 +53,12 @@
             <TextView
                 android:id="@+id/tvDesc"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/_20sdp"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_10sdp"
-                android:maxLines="2"
-                android:text="Descreption of news"
+                android:background="@color/gray"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
-
-            <TextView
-                android:id="@+id/tvPublishedAt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:layout_marginBottom="@dimen/_5sdp"
-                android:text="2h ago"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvDesc" />
-
-            <TextView
-                android:id="@+id/tvSource"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/font1"
-                app:layout_constraintStart_toEndOf="@id/tvPublishedAt"
-                app:layout_constraintTop_toBottomOf="@id/tvDesc"
-                tools:text="arschtecnica.com" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

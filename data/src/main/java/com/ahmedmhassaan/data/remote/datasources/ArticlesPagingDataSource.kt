@@ -1,10 +1,12 @@
 package com.ahmedmhassaan.data.remote.datasources
 
+import android.util.Log
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.ahmedmhassaan.data.model.Article
 import com.ahmedmhassaan.data.model.ArticlesResponse
 import com.ahmedmhassaan.data.remote.api.ArticleService
+import com.ahmedmhassaan.data.throwables.HostApiError
 import retrofit2.HttpException
 import java.io.IOException
 import javax.inject.Inject
@@ -22,15 +24,16 @@ class ArticlesPagingDataSource @Inject constructor(
 
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Article> {
-        val position = params.key ?: 1;
-        val response: ArticlesResponse = service.search(
-            query = query,
-            language = "ar",
-            pageSize = params.loadSize,
-            currentPage = position
-        ).getOrThrow()
-
         return try {
+
+            val position = params.key ?: 1;
+            val response: ArticlesResponse = service.search(
+                query = query,
+                language = "ar",
+                pageSize = params.loadSize,
+                currentPage = position
+            ).getOrThrow()
+
 
             val articles = response.articles
 
@@ -44,6 +47,8 @@ class ArticlesPagingDataSource @Inject constructor(
         } catch (e: IOException) {
             LoadResult.Error(e)
         } catch (e: HttpException) {
+            LoadResult.Error(e)
+        } catch (e: HostApiError) {
             LoadResult.Error(e)
         }
     }

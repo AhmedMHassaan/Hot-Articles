@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/news_nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_nav_graph"
+    app:startDestination="@id/fragment_search">
+
+
+    <fragment
+        android:name="com.ahmedmhassaan.orangetask.presentation.ui.news.search_fragmeent.FragmentSearch"
+        android:id="@+id/fragment_search"
+        android:label="Search"
+        tools:layout="@layout/fragment_search"
+        />
 
 </navigation>
