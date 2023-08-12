@@ -3,10 +3,10 @@ package com.ahmedmhassaan.orangetask.presentation.ui.news.search_fragmeent
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.ahmedmhassaan.orangetask.databinding.FragmentSearchBinding
-import com.ahmedmhassaan.orangetask.presentation.base.fragment.BaseBindFragment
 import com.ahmedmhassaan.orangetask.R
+import com.ahmedmhassaan.orangetask.databinding.FragmentSearchBinding
 import com.ahmedmhassaan.orangetask.presentation.adapters.ArticlesAdapter
+import com.ahmedmhassaan.orangetask.presentation.base.fragment.BaseBindFragment
 import com.ahmedmhassaan.orangetask.utils.setupWithAdapter
 import dagger.hilt.android.AndroidEntryPoint
 

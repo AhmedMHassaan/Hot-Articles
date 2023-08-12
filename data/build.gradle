@@ -5,6 +5,7 @@ plugins {
     id 'kotlin-kapt'
 }
 
+
 android {
     namespace 'com.ahmedmhassaan.data'
     compileSdk 33
@@ -21,6 +22,18 @@ android {
                 arguments += ["room.schemaLocation": "$projectDir/schemas".toString()]
             }
         }
+
+        Properties properties = new Properties();
+        File file = project.rootProject.file("local.properties");
+        properties.load(new FileInputStream(file))
+        String API_KEY = properties.getProperty("APK_KEY", "")
+
+//        val properites = Properties()
+//        val file = project.rootProject.file("local.properties")
+//        properites.load(FileInputStream(file))
+//        val API_KEY: String ? = properites.getProperty("APK_KEY", "")
+        buildConfigField("String", "KEY", "\"$API_KEY\"")
+        System.out.println("Key is $API_KEY")
 
 
     }
@@ -67,9 +80,14 @@ dependencies {
     kapt "com.google.dagger:hilt-compiler:2.47" // hilt di
 
     def room_version = '2.5.2'   // for room
+    implementation"androidx.room:room-ktx:$room_version"
     implementation "androidx.room:room-runtime:$room_version" // room
     kapt "androidx.room:room-compiler:$room_version" // room compiler
-    implementation "androidx.room:room-rxjava2:$room_version" // room rxJava
+
+
+
+    def paging_version = "3.2.0"
+    implementation "androidx.paging:paging-runtime-ktx:$paging_version"
 
 
     testImplementation 'junit:junit:4.13.2'
@@ -86,5 +104,6 @@ dependencies {
     androidTestImplementation 'com.google.dagger:hilt-android-testing:2.47'
     kaptAndroidTest 'com.google.dagger:hilt-android-compiler:2.47'
     androidTestAnnotationProcessor 'com.google.dagger:hilt-android-compiler:2.47'
+    testImplementation("androidx.paging:paging-common-ktx:$paging_version")
 
 }

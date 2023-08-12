@@ -1,13 +1,11 @@
 package com.ahmedmhassaan.domain.repos
 
+import androidx.paging.PagingData
 import com.ahmedmhassaan.domain.models.DomainArticle
+import kotlinx.coroutines.flow.Flow
 
 interface ArticlesRepository {
 
     suspend fun searchForArticles(
-        query: String,
-        pageNumber: Int,
-        from: String,
-        language: String
-    ): List<DomainArticle>
+    ): Flow<PagingData<DomainArticle>>
 }

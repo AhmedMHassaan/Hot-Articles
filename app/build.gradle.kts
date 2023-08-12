@@ -1,3 +1,7 @@
+import com.android.build.gradle.internal.cxx.configure.gradleLocalProperties
+import java.io.FileInputStream
+import java.util.*
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -7,16 +11,22 @@ plugins {
 
 }
 
+
+
+
 android {
     namespace = "com.ahmedmhassaan.orangetask"
     compileSdk = 34
-
     defaultConfig {
         applicationId = "com.ahmedmhassaan.orangetask"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
+
+
+//        buildConfigField("String", "API_KEY",API_KEY)
+
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -38,7 +48,7 @@ android {
         jvmTarget = "17"
     }
     buildFeatures {
-
+        buildConfig = true
         dataBinding = true
         viewBinding = true
 
