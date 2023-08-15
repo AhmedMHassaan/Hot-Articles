@@ -101,4 +101,6 @@ public abstract class CoreFragment extends Fragment implements OnResultListener,
 
 
     public abstract void onDestroyFragment();
+
+
 }

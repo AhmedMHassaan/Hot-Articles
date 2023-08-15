@@ -10,17 +10,17 @@ import javax.inject.Inject
 
 class LoadCachedArticlesUseCase @Inject constructor(
     private val localArticlesRepository: LocalCacheArticlesRepository
-) : BaseFlowUseCase<LoadCachedArticlesUseCase.Request, List<DomainArticle>>() {
-    override fun execute(request: Request): Flow<Resource<List<DomainArticle>>> = flow {
+) : BaseFlowUseCase<Any?, List<DomainArticle>>() {
+    override fun execute(request: Any?): Flow<Resource<List<DomainArticle>>> = flow {
         val response = localArticlesRepository.loadCashedArticles(
-            request.currentPage,
-            request.language
+//            request.currentPage,
+//            request.language
         )
         emit(Resource.Success(response))
     }
 
-    data class Request(
-        val currentPage: Int,
-        val language: String
-    )
+//    data class Request(
+////        val currentPage: Int,
+////        val language: String
+//    )
 }

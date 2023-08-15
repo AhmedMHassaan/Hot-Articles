@@ -10,11 +10,8 @@ import javax.inject.Inject
 class LocalCacheRepositoryImpl @Inject constructor(
     private val cacheDataSource: LocalArticlesDataSource
 ) : LocalCacheArticlesRepository {
-    override suspend fun loadCashedArticles(
-        currentPage: Int,
-        language: String
-    ): List<DomainArticle> {
-        return cacheDataSource.loadCachedArticles(currentPage).map {
+    override suspend fun loadCashedArticles(): List<DomainArticle> {
+        return cacheDataSource.loadCachedArticles().map {
             it.toDomainArticle()
         }
     }

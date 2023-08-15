@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="article"
+            type="com.ahmedmhassaan.domain.models.DomainArticle" />
+
+        <variable
+            name="listener"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+
+            <ImageView
+                android:id="@+id/detail_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:minHeight="@dimen/_150sdp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/SubText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:fontFamily="@font/font1"
+                android:text="@string/title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detail_photo" />
+
+            <TextView
+                android:id="@+id/title_text"
+                style="@style/MainText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font1"
+                android:text="@{article.title}"
+                app:layout_constraintEnd_toEndOf="@id/title"
+                app:layout_constraintStart_toStartOf="@id/title"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                tools:text="The judge of the jungle" />
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/SubText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/date"
+                app:layout_constraintEnd_toEndOf="@id/title_text"
+                app:layout_constraintStart_toStartOf="@id/title_text"
+                app:layout_constraintTop_toBottomOf="@id/title_text" />
+
+            <TextView
+                android:id="@+id/date_text"
+                style="@style/MainText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{article.publishedAt}"
+                app:layout_constraintEnd_toEndOf="@id/date"
+                app:layout_constraintStart_toStartOf="@id/date"
+                app:layout_constraintTop_toBottomOf="@id/date"
+                tools:text="2011:12:9" />
+
+            <TextView
+                android:id="@+id/desc"
+                style="@style/SubText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/content"
+                app:layout_constraintEnd_toEndOf="@id/date_text"
+                app:layout_constraintStart_toStartOf="@id/date_text"
+                app:layout_constraintTop_toBottomOf="@id/date_text" />
+
+            <TextView
+                android:id="@+id/desc_text"
+                style="@style/MainText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{article.content}"
+                app:layout_constraintEnd_toEndOf="@id/desc"
+                app:layout_constraintStart_toStartOf="@id/desc"
+                app:layout_constraintTop_toBottomOf="@id/desc"
+                tools:text="Desc DEsc DESC DESC DESC" />
+
+            <TextView
+                android:id="@+id/author"
+                style="@style/SubText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/author"
+                app:layout_constraintEnd_toEndOf="@id/desc_text"
+                app:layout_constraintStart_toStartOf="@id/desc_text"
+                app:layout_constraintTop_toBottomOf="@id/desc_text" />
+
+            <TextView
+                android:id="@+id/author_text"
+                style="@style/MainText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{article.author}"
+                app:layout_constraintEnd_toEndOf="@id/author"
+                app:layout_constraintStart_toStartOf="@id/author"
+                app:layout_constraintTop_toBottomOf="@id/author"
+
+                tools:text="KEY WORD KKKK" />
+
+            <TextView
+                android:id="@+id/source"
+                style="@style/SubText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/author"
+                app:layout_constraintEnd_toEndOf="@id/author_text"
+                app:layout_constraintStart_toStartOf="@id/author_text"
+                app:layout_constraintTop_toBottomOf="@id/author_text" />
+
+            <TextView
+                android:id="@+id/source_text"
+                style="@style/MainText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{article.source.name}"
+                app:layout_constraintEnd_toEndOf="@id/author"
+                app:layout_constraintStart_toStartOf="@id/author"
+                app:layout_constraintTop_toBottomOf="@id/author"
+                android:clickable="true"
+                android:focusable="true"
+                tools:text="KEY WORD KKKK" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/open_in_browser"
+                app:layout_constraintTop_toBottomOf="@id/source"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent=".6"
+                android:onClick="@{v->listener.onClick(v)}"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:id="@+id/btnOpenInBrowser"
+                android:textSize="@dimen/_14ssp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

@@ -1,11 +1,11 @@
-package com.ahmedmhassaan.orangetask.presentation.ui.news.search_fragmeent
+package com.ahmedmhassaan.orangetask.presentation.ui.news.search
 
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import androidx.navigation.fragment.findNavController
 import com.ahmedmhassaan.orangetask.R
 import com.ahmedmhassaan.orangetask.databinding.FragmentSearchBinding
 import com.ahmedmhassaan.orangetask.presentation.adapters.ArticlesAdapter
@@ -15,7 +15,7 @@ import com.ahmedmhassaan.orangetask.utils.setupWithAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class FragmentSearch : BaseBindFragment<FragmentSearchBinding>() {
+class FragmentSearch : BaseBindFragment<FragmentSearchBinding>(), View.OnClickListener {
 
     private val searchViewModel: SearchViewModel by lazy {
         ViewModelProvider(this)[SearchViewModel::class.java]
@@ -35,6 +35,10 @@ class FragmentSearch : BaseBindFragment<FragmentSearchBinding>() {
 
         searchViewModel.searchResultLiveData.observe(viewLifecycleOwner) {
             articlesAdapter.submitData(lifecycle, it)
+            Log.d(
+                "APP_TAG",
+                "FragmentSearch - observeViewModel:  data submited and new size is ${articlesAdapter.itemCount}"
+            )
         }
 
         searchViewModel.error.observe(viewLifecycleOwner) {
@@ -51,6 +55,7 @@ class FragmentSearch : BaseBindFragment<FragmentSearchBinding>() {
     }
 
     private fun events() {
+        binding.listener = this
         binding.txtSearch.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 searchViewModel.search(query)
@@ -73,4 +78,15 @@ class FragmentSearch : BaseBindFragment<FragmentSearchBinding>() {
     }
 
     override fun getLayoutId() = R.layout.fragment_search
+
+    override fun onClick(p0: View?) {
+        when (p0) {
+            binding.settingsLayout -> {
+                findNavController()
+                    .navigate(
+                        FragmentSearchDirections.actionFragmentSearchToFragmentSettings()
+                    )
+            }
+        }
+    }
 }

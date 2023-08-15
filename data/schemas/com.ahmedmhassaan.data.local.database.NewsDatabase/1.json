@@ -2,18 +2,12 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "89e2ad9626ae88030bc5d49ace537ee4",
+    "identityHash": "827c01567ede10d9b3518d565c5058ee",
     "entities": [
       {
         "tableName": "articles",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` TEXT NOT NULL, `description` TEXT NOT NULL, `author` TEXT, `url` TEXT NOT NULL, `source` TEXT NOT NULL, `content` TEXT NOT NULL, `date` INTEGER NOT NULL, `image` TEXT NOT NULL, `isInFav` INTEGER NOT NULL)",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`title` TEXT NOT NULL, `description` TEXT NOT NULL, `author` TEXT, `url` TEXT NOT NULL, `source` TEXT NOT NULL, `content` TEXT NOT NULL, `date` TEXT NOT NULL, `image` TEXT, `isInFav` INTEGER NOT NULL, `page` INTEGER NOT NULL, PRIMARY KEY(`url`))",
         "fields": [
-          {
-            "fieldPath": "id",
-            "columnName": "id",
-            "affinity": "INTEGER",
-            "notNull": false
-          },
           {
             "fieldPath": "title",
             "columnName": "title",
@@ -53,26 +47,32 @@
           {
             "fieldPath": "date",
             "columnName": "date",
-            "affinity": "INTEGER",
+            "affinity": "TEXT",
             "notNull": true
           },
           {
             "fieldPath": "image",
             "columnName": "image",
             "affinity": "TEXT",
-            "notNull": true
+            "notNull": false
           },
           {
             "fieldPath": "isInFav",
             "columnName": "isInFav",
             "affinity": "INTEGER",
             "notNull": true
+          },
+          {
+            "fieldPath": "page",
+            "columnName": "page",
+            "affinity": "INTEGER",
+            "notNull": true
           }
         ],
         "primaryKey": {
-          "autoGenerate": true,
+          "autoGenerate": false,
           "columnNames": [
-            "id"
+            "url"
           ]
         },
         "indices": [],
@@ -82,7 +82,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '89e2ad9626ae88030bc5d49ace537ee4')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '827c01567ede10d9b3518d565c5058ee')"
     ]
   }
 }

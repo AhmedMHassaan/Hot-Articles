@@ -89,6 +89,9 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.47") // for hilt di
     kapt("com.google.dagger:hilt-compiler:2.47") // hilt di
 
+
+    implementation("de.hdodenhof:circleimageview:3.1.0")  // Circle Image View
+
     implementation("com.github.sharish:ShimmerRecyclerView:v1.3") // shimmer recView
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0") // refresh and CircularDrawable
 

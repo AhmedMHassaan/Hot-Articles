@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">أخبار أورانج</string>
+    <string name="alert">تحذير</string>
+    <string name="error">خطأ</string>
+    <string name="choose_app_language">قم باختيار لغة التطبيق</string>
+    <string name="english_language">اللغة الإنجليزية</string>
+    <string name="arabic_language">اللغة العربية</string>
+    <string name="device_language">لغة الجهاز</string>
+    <string name="choose_theme">اختر المظهر المفضل</string>
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="title">Title</string>
+</resources>

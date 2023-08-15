@@ -8,6 +8,7 @@ import androidx.annotation.IntegerRes
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.ahmedmhassaan.domain.models.DomainArticle
 import com.ahmedmhassaan.orangetask.presentation.base.adapters.BaseRecyclerAdapter
 import com.cooltechworks.views.shimmer.ShimmerRecyclerView
 
@@ -44,3 +45,6 @@ fun ShimmerRecyclerView.setLoading(
         false -> hideShimmerAdapter()
     }
 }
+
+
+

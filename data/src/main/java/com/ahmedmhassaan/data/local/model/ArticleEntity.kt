@@ -6,17 +6,19 @@ import java.io.Serializable
 
 @Entity("articles")
 data class ArticleEntity(
-    @PrimaryKey(autoGenerate = true)
-    val id: Int?,
+//    @PrimaryKey(autoGenerate = true)
+//    val id: Int?,
     val title: String,
     val description: String,
     val author: String?,
+    @PrimaryKey()
     val url: String,
     val source: String,
     val content: String,
-    val date: Long,
-    val image: String,
-    val isInFav: Boolean
+    val date: String,
+    val image: String?,
+    val isInFav: Boolean = false,
+    val page: Int = 0
 ) : Serializable {
 
 }

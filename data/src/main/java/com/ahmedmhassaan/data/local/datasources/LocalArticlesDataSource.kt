@@ -12,7 +12,9 @@ class LocalArticlesDataSource @Inject constructor(
         articlesDao.cacheArticlesInLocalDb(articles)
     }
 
-    suspend fun loadCachedArticles(page: Int): List<ArticleEntity> {
+    suspend fun loadCachedArticles(
+//        page: Int
+    ): List<ArticleEntity> {
         return articlesDao.loadCachedArticles()
     }
 }

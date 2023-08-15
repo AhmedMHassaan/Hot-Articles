@@ -23,20 +23,32 @@ fun DomainArticle.toDataArticle(): Article {
 }
 
 fun DomainArticle.toEntityArticle(): ArticleEntity {
-    val formatter = SimpleDateFormat("yyyy-mm-dd", Locale.ENGLISH)
-    val date = formatter.parse(this.publishedAt)
     return ArticleEntity(
-        null,
         this.title,
         this.description,
         this.author,
         this.url,
         this.source.name,
         this.content,
-        date?.time ?: -1,
+        this.publishedAt,
         this.urlToImage,
         false
     )
+}
+
+fun DomainArticle.puplishingDate(): String {
+    return try {
+        val formatter = SimpleDateFormat("yyyy-mm-dd", Locale.ENGLISH)
+        val dateAndTime = formatter.parse(this.publishedAt)
+        dateAndTime?.let {
+            val justDate: String = formatter.format(dateAndTime)
+            justDate
+        } ?: this.publishedAt
+
+    } catch (e: Exception) {
+        return this.publishedAt
+    }
+
 }
 
 fun Article.toDomainArticle(): DomainArticle {
@@ -52,9 +64,37 @@ fun Article.toDomainArticle(): DomainArticle {
     )
 }
 
+fun Article.toEntityArticle(): ArticleEntity {
+    return ArticleEntity(
+        this.title,
+        this.description,
+        this.author,
+        this.url,
+        this.source.name,
+        this.content,
+        this.publishedAt,
+        this.urlToImage,
+        false,
+        0
+    )
+}
+
+fun Article.toEntityArticle(page: Int = 1, isInFav: Boolean = false): ArticleEntity {
+    return ArticleEntity(
+        this.title,
+        this.description,
+        this.author,
+        this.url,
+        this.source.name,
+        this.content,
+        this.publishedAt,
+        this.urlToImage,
+        isInFav,
+        page
+    )
+}
+
 fun ArticleEntity.toDomainArticle(): DomainArticle {
-    val formatter = SimpleDateFormat("yyyy-mm-dd", Locale.ENGLISH)
-    val date = formatter.format(Date(this.date))
 
     return DomainArticle(
         DomainArticleSource(null, this.source),

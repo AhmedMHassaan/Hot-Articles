@@ -7,10 +7,38 @@
 
 
     <fragment
-        android:name="com.ahmedmhassaan.orangetask.presentation.ui.news.search_fragmeent.FragmentSearch"
         android:id="@+id/fragment_search"
-        android:label="Search"
-        tools:layout="@layout/fragment_search"
-        />
+        android:name="com.ahmedmhassaan.orangetask.presentation.ui.news.search.FragmentSearch"
+        android:label="@string/search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_fragment_search_to_fragment_settings"
+            app:destination="@id/fragment_settings" />
+        <action
+            android:id="@+id/action_fragment_search_to_fragment_details"
+            app:destination="@id/fragment_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_settings"
+        android:name="com.ahmedmhassaan.orangetask.presentation.ui.news.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_fragment_settings_to_fragment_search"
+            app:destination="@id/fragment_search" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_details"
+        android:name="com.ahmedmhassaan.orangetask.presentation.ui.news.details.FragmentArticleDetails"
+        android:label="@string/details"
+        tools:layout="@layout/fragment_article_details">
+
+        <argument
+            android:name="article"
+            app:argType="com.ahmedmhassaan.domain.models.DomainArticle" />
+    </fragment>
+
 
 </navigation>

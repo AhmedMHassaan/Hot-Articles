@@ -13,7 +13,7 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 
 
-open class BaseViewModel : ViewModel() {
+open class BaseViewModel() : ViewModel() {
 
     inline fun <T> Flow<Resource<T>>.dataHandling(
 
@@ -42,4 +42,5 @@ open class BaseViewModel : ViewModel() {
 //            .launchIn(viewModelScope)
             .launchIn(CoroutineScope(Dispatchers.IO))
     }
+
 }

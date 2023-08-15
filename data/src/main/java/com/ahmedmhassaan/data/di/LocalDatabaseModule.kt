@@ -23,6 +23,7 @@ object LocalDatabaseModule {
         return context
     }
 
+    @Singleton
     @Provides
     fun provideRoomDatabase(@ApplicationContext context: Context): NewsDatabase {
         return databaseBuilder(
@@ -35,11 +36,14 @@ object LocalDatabaseModule {
             .build();
     }
 
+
     @Provides
+    @Singleton
     fun provideArticlesDao(database: NewsDatabase): ArticlesDao {
         return database.articlesDao()
     }
 
+    @Singleton
     @Provides
     fun provideFavDao(database: NewsDatabase): FavouritesDao {
         return database.favouritesDao()

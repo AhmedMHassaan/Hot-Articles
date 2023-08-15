@@ -12,7 +12,7 @@ interface ArticlesDao {
     @Query("select * from articles")
     suspend fun loadCachedArticles(): List<ArticleEntity>
 
-    @Insert(ArticleEntity::class, OnConflictStrategy.IGNORE)
+    @Insert(ArticleEntity::class, OnConflictStrategy.REPLACE)
     suspend fun cacheArticlesInLocalDb(articles: List<ArticleEntity>)
 
 }

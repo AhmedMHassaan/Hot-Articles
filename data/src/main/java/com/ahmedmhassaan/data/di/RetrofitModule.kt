@@ -56,6 +56,7 @@ RetrofitModule {
 
 
     @Provides
+    @Singleton
     fun provideArticlesService(retrofit: Retrofit): ArticleService =
         retrofit.create(ArticleService::class.java)
 }

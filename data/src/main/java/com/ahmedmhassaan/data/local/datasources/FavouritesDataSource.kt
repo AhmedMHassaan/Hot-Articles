@@ -10,8 +10,8 @@ class FavouritesDataSource @Inject constructor(
     private val favouritesDao: FavouritesDao
 ) {
 
-    suspend fun addArticleToFavourite(articleEntity: ArticleEntity): Long {
-        return favouritesDao.addArticleToFav(articleEntity)
+    suspend fun addArticleToFavourite(articleEntity: ArticleEntity): Int {
+        return favouritesDao.addArticleToFav(articleEntity.url)
     }
 
     suspend fun loadFavourites(): List<ArticleEntity> {
