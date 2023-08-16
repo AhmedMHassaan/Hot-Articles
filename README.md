@@ -8,6 +8,7 @@ using news api
 * Retrofit
 * Moudules
 * hilt (DI)
+* unit testing
 * Data binding
 * Modularisation
 * ROOM for local database caching
