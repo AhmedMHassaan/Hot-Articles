@@ -19,4 +19,7 @@
     <string name="you_can_see_more_on">You can see more details in</string>
     <string name="added_to_fav_successfully">Added To Favourites</string>
     <string name="source">Source</string>
+    <string name="favourites">Favourites</string>
+    <string name="remove">Remove</string>
+    <string name="removed_from_fav">Removed From Favourites</string>
 </resources>

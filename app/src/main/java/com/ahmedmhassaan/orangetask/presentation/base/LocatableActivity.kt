@@ -5,14 +5,14 @@ import android.content.res.Configuration
 import com.ahmedmhassaan.core.activity.CoreActivity
 import com.ahmedmhassaan.data.local.database.LanguageSharedPreferences
 import com.ahmedmhassaan.domain.usecase.GetSavedLanguageUseCase
+import com.ahmedmhassaan.orangetask.presentation.base.activity.BaseActivity
 import com.ahmedmhassaan.orangetask.utils.LocaleContextWrapper
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.Locale
 import javax.inject.Inject
 
 @AndroidEntryPoint
-open class LocatableActivity @Inject constructor(
-) : CoreActivity() {
+open class LocatableActivity @Inject constructor() : BaseActivity() {
 
 
     override fun attachBaseContext(base: Context) {

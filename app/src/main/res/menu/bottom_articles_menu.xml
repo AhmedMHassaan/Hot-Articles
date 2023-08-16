@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragment_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search" />
+
+    <item
+        android:id="@+id/fragment_fav"
+        android:icon="@drawable/ic_bookmark_border_black_24dp"
+        android:title="@string/favourites" />
+
+    <item
+        android:id="@+id/fragment_settings"
+        android:icon="@drawable/baseline_settings"
+        android:title="@string/settings" />
+
+</menu>

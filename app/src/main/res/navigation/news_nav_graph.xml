@@ -41,4 +41,15 @@
     </fragment>
 
 
+    <fragment
+        android:id="@+id/fragment_fav"
+        android:name="com.ahmedmhassaan.orangetask.presentation.ui.news.favourites.FavouritesFragment"
+        android:label="@string/favourites"
+        tools:layout="@layout/fragment_favourites" >
+        <action
+            android:id="@+id/action_fragment_fav_to_fragment_details"
+            app:destination="@id/fragment_details" />
+    </fragment>
+
+
 </navigation>
