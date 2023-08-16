@@ -8,7 +8,6 @@ using news api
 * Retrofit
 * Moudules
 * hilt (DI)
-* Sensor Manager
 * Data binding
 * Modularisation
 * ROOM for local database caching
