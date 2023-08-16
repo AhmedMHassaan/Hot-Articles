@@ -2,6 +2,7 @@ package com.ahmedmhassaan.orangetask.presentation.ui.news
 
 import android.os.Bundle
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.ahmedmhassaan.orangetask.R
 import com.ahmedmhassaan.orangetask.databinding.ActivityMainBinding
@@ -16,8 +17,9 @@ class MainActivity @Inject constructor() : BaseActivityBinding<ActivityMainBindi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val controller = findNavController(binding.navHostFragmentActivityHome.id)
-        binding.bottomNav.setupWithNavController(controller)
+        val navHostFragment = supportFragmentManager.findFragmentById(binding.navHostFragmentActivityHome.id) as NavHostFragment
+        val navController = navHostFragment.navController
+        binding.bottomNav.setupWithNavController(navController)
 
     }
 

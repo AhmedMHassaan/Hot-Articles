@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -59,6 +60,8 @@ class FragmentSearch : BaseBindFragment<FragmentSearchBinding>(), View.OnClickLi
         searchViewModel.addedToFav.observe(viewLifecycleOwner) {
             if (it) {
                 ToastMessage.success(context, getString(R.string.added_to_fav_successfully))
+            } else {
+                Toast.makeText(context, "Not Added", Toast.LENGTH_SHORT).show()
             }
         }
 

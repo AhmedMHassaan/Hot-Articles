@@ -11,7 +11,9 @@ import com.ahmedmhassaan.orangetask.R
 import com.ahmedmhassaan.orangetask.utils.ToastMessage
 import com.ahmedmhassaan.orangetask.utils.setLoading
 import com.ahmedmhassaan.orangetask.utils.setupWithAdapter
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class FavouritesFragment : BaseBindFragment<FragmentFavouritesBinding>() {
 
     private val favouritesAdapter = FavouritesArticlesAdapter()

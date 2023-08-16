@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">أخبار أورانج</string>
+    <string name="app_name">أورانج</string>
     <string name="alert">تحذير</string>
     <string name="error">خطأ</string>
     <string name="choose_app_language">قم باختيار لغة التطبيق</string>
@@ -21,7 +21,7 @@
     <string name="you_can_see_more_on">يمكنك مشاهدة المزيد علي </string>
     <string name="added_to_fav_successfully">تمت الإضافة إلى المفضلة</string>
     <string name="source">المصدر</string>
-    <string name="favourites">Favourites</string>
-    <string name="remove">Remove</string>
-    <string name="removed_from_fav">Removed From Favourites</string>
+    <string name="favourites">المفضلة</string>
+    <string name="remove">إزالة</string>
+    <string name="removed_from_fav">تمت الإزالة من المفضلة</string>
 </resources>

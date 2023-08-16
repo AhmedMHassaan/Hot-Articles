@@ -31,14 +31,16 @@ class FavouritesDaoTest {
     @Named("test_database")
     lateinit var database: NewsDatabase
 
-    @Inject
     lateinit var favouritesDao: FavouritesDao
+    lateinit var cacheDao: ArticlesDao
     lateinit var domainArticle: DomainArticle
     lateinit var entityArticle: ArticleEntity
 
     @Before
     fun setUp() {
         hiltRule.inject()
+        favouritesDao = database.favouritesDao()
+        cacheDao = database.articlesDao()
 
         domainArticle = DomainArticle(
             DomainArticleSource(null, "source"),
@@ -60,6 +62,7 @@ class FavouritesDaoTest {
     @Test
     fun test_insert_into_favourites() {
         runTest {
+            cacheDao.cacheArticlesInLocalDb(mutableListOf(entityArticle))
             val insertedId = favouritesDao.addArticleToFav(entityArticle.url)
             assertWithMessage("InsertedId = $insertedId").that(insertedId).isGreaterThan(0)
         }
@@ -68,6 +71,7 @@ class FavouritesDaoTest {
     @Test
     fun test_load_favourites() {
         runTest {
+            cacheDao.cacheArticlesInLocalDb(mutableListOf(entityArticle))
             favouritesDao.addArticleToFav(entityArticle.url)
             val favList = favouritesDao.loadAllFavourites()
 
@@ -79,6 +83,7 @@ class FavouritesDaoTest {
     @Test
     fun test_that_propertyIsInFav_is_true() {
         runTest {
+            cacheDao.cacheArticlesInLocalDb(mutableListOf(entityArticle))
             favouritesDao.addArticleToFav(entityArticle.url)
             val favList = favouritesDao.loadAllFavourites()
             val favouritedArticle = favList[0]
@@ -89,6 +94,7 @@ class FavouritesDaoTest {
     @Test
     fun test_that_propertyPage_is_1() {
         runTest {
+            cacheDao.cacheArticlesInLocalDb(mutableListOf(entityArticle))
             favouritesDao.addArticleToFav(entityArticle.url)
             val favList = favouritesDao.loadAllFavourites()
             val favouritedArticle = favList[0]
@@ -99,11 +105,22 @@ class FavouritesDaoTest {
     @Test
     fun test_convert_from_favouritesItem_to_domainArticle() {
         runTest {
-
+            cacheDao.cacheArticlesInLocalDb(mutableListOf(entityArticle))
             favouritesDao.addArticleToFav(entityArticle.url)
             val favList = favouritesDao.loadAllFavourites()
             val favouritedArticle = favList[0]
             assertThat(favouritedArticle.toDomainArticle()).isEqualTo(domainArticle)
+        }
+    }
+
+    @Test
+    fun test_remove_item_from_favourite() {
+        runTest {
+
+            cacheDao.cacheArticlesInLocalDb(mutableListOf(entityArticle))
+            favouritesDao.addArticleToFav("url")
+            val response = favouritesDao.removeArticleFromFav(entityArticle)
+            assertWithMessage("Response is $response").that(response).isGreaterThan(0)
         }
     }
 }

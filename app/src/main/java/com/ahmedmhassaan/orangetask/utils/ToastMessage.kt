@@ -24,11 +24,11 @@ object ToastMessage {
         when (toastTag) {
             ToastTags.SUCCRSS -> Toasty.success(
                 context, messages.toString(), Toasty.LENGTH_SHORT
-            )
+            ).show()
 
             ToastTags.ERROR -> Toasty.error(
                 context, messages.toString(), Toasty.LENGTH_SHORT
-            )
+            ).show()
         }
     }
 

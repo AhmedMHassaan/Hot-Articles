@@ -118,7 +118,7 @@ public abstract class BaseRecyclerAdapter<MODEL, BINDING extends ViewDataBinding
 
         this.arrayList.clear();
         this.arrayList.addAll(list);
-        notifyItemRangeChanged(0, arrayList.size());
+        notifyDataSetChanged();
     }
 
     public void updateListWithNoNullItems(ArrayList<MODEL> list) {

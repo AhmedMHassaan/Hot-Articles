@@ -6,8 +6,10 @@ import com.ahmedmhassaan.domain.models.DomainArticle
 import com.ahmedmhassaan.domain.usecase.LoadFavouritesArticlesUseCase
 import com.ahmedmhassaan.domain.usecase.RemoveArticleFromFavouriteUseCase
 import com.ahmedmhassaan.orangetask.presentation.base.viewmodel.BaseViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
+@HiltViewModel
 class FavouritesViewModel @Inject constructor(
     private val getFavouritesArticlesUseCase: LoadFavouritesArticlesUseCase,
     private val removeItemFromFavouritesArticleUseCase: RemoveArticleFromFavouriteUseCase

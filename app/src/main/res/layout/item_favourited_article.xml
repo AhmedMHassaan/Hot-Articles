@@ -43,7 +43,7 @@
 
             <TextView
                 android:id="@+id/lblArticleTitle"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_5sdp"
                 android:text="@{article.title}"
@@ -54,7 +54,7 @@
                 app:layout_constraintEnd_toStartOf="@id/btnRemove"
                 app:layout_constraintStart_toEndOf="@id/articleImage"
                 app:layout_constraintTop_toTopOf="@id/articleImage"
-                tools:text="Hi I am title of article" />
+                tools:text="Hi I am title of article with long text to watch what is happened" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnRemove"
