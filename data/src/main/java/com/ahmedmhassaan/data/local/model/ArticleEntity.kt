@@ -9,12 +9,12 @@ data class ArticleEntity(
 //    @PrimaryKey(autoGenerate = true)
 //    val id: Int?,
     val title: String,
-    val description: String,
+    val description: String?,
     val author: String?,
     @PrimaryKey()
     val url: String,
     val source: String,
-    val content: String,
+    val content: String?,
     val date: String,
     val image: String?,
     val isInFav: Boolean = false,

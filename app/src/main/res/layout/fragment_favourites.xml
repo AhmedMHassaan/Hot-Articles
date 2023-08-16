@@ -45,5 +45,23 @@
             tools:itemCount="10"
             tools:listitem="@layout/item_favourited_article" />
 
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_items_found_nuse_search_to_fetch_more"
+            android:id="@+id/lblEmptyData"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/startGuide"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_5sdp"
+            app:layout_constraintEnd_toStartOf="@id/endGuide"
+            android:visibility="gone"
+            />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

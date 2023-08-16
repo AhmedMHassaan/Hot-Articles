@@ -1,11 +1,9 @@
 package com.ahmedmhassaan.orangetask.utils
 
 import android.content.Context
-import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
-import es.dmoral.toasty.Toasty
 import com.ahmedmhassaan.orangetask.R
-import com.ahmedmhassaan.orangetask.presentation.App
+import es.dmoral.toasty.Toasty
 
 object ToastMessage {
 
@@ -13,7 +11,7 @@ object ToastMessage {
         Toasty.Config.getInstance()
             .allowQueue(false)
             .setToastTypeface(ResourcesCompat.getFont(context, R.font.font1)!!)
-            .setTextSize(context.resources.getDimension(com.intuit.sdp.R.dimen._6sdp).toInt())
+            .setTextSize(context.resources.getDimension(com.intuit.sdp.R.dimen._4sdp).toInt())
             .supportDarkTheme(true)
             .tintIcon(true)
             .apply()

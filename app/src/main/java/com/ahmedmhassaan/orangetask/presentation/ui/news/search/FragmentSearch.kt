@@ -1,7 +1,6 @@
 package com.ahmedmhassaan.orangetask.presentation.ui.news.search
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -33,17 +32,21 @@ class FragmentSearch : BaseBindFragment<FragmentSearchBinding>(), View.OnClickLi
         observeViewModel()
         setupRecycler()
         events()
+        searchViewModel.loadTopHeadlines()
 
     }
 
     private fun observeViewModel() {
 
-        searchViewModel.searchResultLiveData.observe(viewLifecycleOwner) {
+        searchViewModel.articlesResultLiveData.observe(viewLifecycleOwner) {
             articlesAdapter.submitData(lifecycle, it)
             Log.d(
                 "APP_TAG",
                 "FragmentSearch - observeViewModel:  data submited and new size is ${articlesAdapter.itemCount}"
             )
+
+//            binding.lblEmptyData.isVisible = articlesAdapter.itemCount == 0
+
         }
 
         searchViewModel.error.observe(viewLifecycleOwner) {

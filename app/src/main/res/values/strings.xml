@@ -22,4 +22,5 @@
     <string name="favourites">Favourites</string>
     <string name="remove">Remove</string>
     <string name="removed_from_fav">Removed From Favourites</string>
+    <string name="no_items_found_nuse_search_to_fetch_more">No Items Found\nUse Search to fetch more</string>
 </resources>

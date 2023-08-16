@@ -18,4 +18,17 @@ interface ArticleService {
 //        @Query("") : String,
     ): Result<ArticlesResponse>
 
+
+    @GET("top-headlines")
+    suspend fun topHeadLines(
+        @Query("sortBy") sortBy: String? = "publishedAt",
+        @Query("country")country: String,
+        @Query("pageSize") pageSize: Int,
+        @Query("page") currentPage: Int,
+//        @Query("from") : String,
+//        @Query("") : String,
+//        @Query("") : String,
+    ): Result<ArticlesResponse>
+
+
 }

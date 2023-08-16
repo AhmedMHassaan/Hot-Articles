@@ -2,12 +2,8 @@ package com.ahmedmhassaan.data.remote.datasources
 
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
-import androidx.room.util.query
 import com.ahmedmhassaan.data.local.database.ArticlesDao
-import com.ahmedmhassaan.data.local.database.LanguageSharedPreferences
-import com.ahmedmhassaan.data.model.Article
 import com.ahmedmhassaan.data.remote.api.ArticleService
-import com.ahmedmhassaan.domain.repos.LanguageRepository
 import javax.inject.Inject
 
 class RemoteArticlesDataSource @Inject constructor(
@@ -32,4 +28,19 @@ class RemoteArticlesDataSource @Inject constructor(
                 )
             },
         ).flow
+
+
+    suspend fun topHeadLines() = Pager(
+        config = PagingConfig(
+            pageSize = 20,
+            enablePlaceholders = false,
+        ),
+        pagingSourceFactory = {
+            TopHeadLinesArticlesPagingDataSource(
+                service = articleService,
+                articlesDao = articlesDao
+
+            )
+        }
+    ).flow
 }

@@ -24,4 +24,5 @@
     <string name="favourites">المفضلة</string>
     <string name="remove">إزالة</string>
     <string name="removed_from_fav">تمت الإزالة من المفضلة</string>
+    <string name="no_items_found_nuse_search_to_fetch_more">لا توجد أي بيانات\nاستخدم البحث للعثور على المزيد</string>
 </resources>

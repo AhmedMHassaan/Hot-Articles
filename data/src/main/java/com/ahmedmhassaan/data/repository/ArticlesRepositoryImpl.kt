@@ -13,9 +13,18 @@ import javax.inject.Inject
 class ArticlesRepositoryImpl @Inject constructor(
     private val articleDataSource: RemoteArticlesDataSource,
 ) : ArticlesRepository {
-    override suspend fun searchForArticles(query:String): Flow<PagingData<DomainArticle>> {
+    override suspend fun searchForArticles(query: String): Flow<PagingData<DomainArticle>> {
 
         return articleDataSource.search(query).map { articlePagingData ->
+            articlePagingData.map {
+                it.toDomainArticle()
+            }
+
+        }
+    }
+
+    override suspend fun fetchTopHeadLines(): Flow<PagingData<DomainArticle>> {
+        return articleDataSource.topHeadLines().map { articlePagingData ->
             articlePagingData.map {
                 it.toDomainArticle()
             }

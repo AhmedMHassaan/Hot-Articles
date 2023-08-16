@@ -2,6 +2,7 @@ package com.ahmedmhassaan.orangetask.presentation.ui.news.favourites
 
 import android.os.Bundle
 import android.view.View
+import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.ahmedmhassaan.domain.models.DomainArticle
@@ -59,6 +60,8 @@ class FavouritesFragment : BaseBindFragment<FragmentFavouritesBinding>() {
 
         favouritesViewModel.favList.observe(viewLifecycleOwner) {
             favouritesAdapter.updateList(it)
+
+            binding.lblEmptyData.isVisible = favouritesAdapter.isEmpty
         }
 
         favouritesViewModel.removedFromFav.observe(viewLifecycleOwner) {

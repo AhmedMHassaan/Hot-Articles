@@ -5,11 +5,9 @@ import android.graphics.Color
 import android.graphics.Typeface
 import androidx.annotation.CallSuper
 import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.ahmedmhassaan.orangetask.R
-import com.ahmedmhassaan.orangetask.presentation.App
 import com.ahmedmhassaan.core.fragments.CoreFragment
+import com.ahmedmhassaan.orangetask.R
 import com.ahmedmhassaan.orangetask.utils.ToastMessage
 
 
@@ -49,7 +47,7 @@ open class BaseFragment() : CoreFragment() {
                     dialog.show()
 
                     dialog.getButton(AlertDialog.BUTTON_POSITIVE).apply {
-                        setTextColor(ContextCompat.getColor(context, android.R.attr.colorPrimary))
+                        setTextColor(ContextCompat.getColor(context,R.color.purple_700))
                         typeface = Typeface.DEFAULT
                     }
                     dialog.getButton(AlertDialog.BUTTON_NEGATIVE).apply {
