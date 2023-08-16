@@ -49,6 +49,7 @@
                 android:text="@{article.title}"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_15ssp"
+                android:maxLines="3"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@id/articleImage"
                 app:layout_constraintEnd_toStartOf="@id/btnRemove"

@@ -23,10 +23,10 @@ class FavouritesFragment : BaseBindFragment<FragmentFavouritesBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         binding.recViewArticles.setupWithAdapter(favouritesAdapter)
-
         observeViewModel()
         events()
 
+        favouritesViewModel.loadFavouritesItems()
     }
 
     private fun events() {
@@ -34,8 +34,8 @@ class FavouritesFragment : BaseBindFragment<FragmentFavouritesBinding>() {
             override fun showArticleDetails(article: DomainArticle) {
                 try {
                     findNavController().navigate(
-                            FavouritesFragmentDirections.actionFragmentFavToFragmentDetails(article)
-                        )
+                        FavouritesFragmentDirections.actionFragmentFavToFragmentDetails(article)
+                    )
                 } catch (e: Exception) {
                     ToastMessage.error(context!!, e.message.toString())
                 }

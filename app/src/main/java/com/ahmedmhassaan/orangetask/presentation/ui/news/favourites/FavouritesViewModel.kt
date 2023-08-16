@@ -31,11 +31,11 @@ class FavouritesViewModel @Inject constructor(
     val removedFromFav: LiveData<Boolean> = _removedFromFav
 
 
-    init {
-        loadFavouritesItems()
-    }
+//    init {
+////        loadFavouritesItems()
+//    }
 
-    private fun loadFavouritesItems() {
+     fun loadFavouritesItems() {
         getFavouritesArticlesUseCase.invoke(null).dataHandling(
             success = {
                 _favList.postValue(ArrayList(it))
