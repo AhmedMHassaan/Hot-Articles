@@ -4,12 +4,14 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import com.ahmedmhassaan.domain.models.DomainArticle
 import com.ahmedmhassaan.orangetask.presentation.base.fragment.BaseBindFragment
 import com.ahmedmhassaan.orangetask.R
 import com.ahmedmhassaan.orangetask.databinding.FragmentArticleDetailsBinding
 import com.ahmedmhassaan.orangetask.utils.ToastMessage
+import com.ahmedmhassaan.orangetask.utils.linkifyIt
 
 class FragmentArticleDetails : BaseBindFragment<FragmentArticleDetailsBinding>(),
     View.OnClickListener {
@@ -20,9 +22,10 @@ class FragmentArticleDetails : BaseBindFragment<FragmentArticleDetailsBinding>()
         arguments?.let {
             article = FragmentArticleDetailsArgs.fromBundle(it).article
             binding.article = article
+            binding.sourceText.linkifyIt()
 
         } ?: kotlin.run {
-            ToastMessage.error(getString(R.string.no_articles_founded))
+            ToastMessage.error(requireContext(), getString(R.string.no_articles_founded))
             findNavController()
                 .popBackStack()
         }
@@ -43,3 +46,5 @@ class FragmentArticleDetails : BaseBindFragment<FragmentArticleDetailsBinding>()
         }
     }
 }
+
+

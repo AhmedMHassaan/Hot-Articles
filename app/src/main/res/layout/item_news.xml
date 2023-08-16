@@ -9,6 +9,11 @@
             name="article"
             type="com.ahmedmhassaan.domain.models.DomainArticle" />
 
+        <variable
+            name="listener"
+            type="com.ahmedmhassaan.orangetask.presentation.ui.news.search.AdapterOnClickEvents" />
+
+
         <import type="com.ahmedmhassaan.data.ext.ExtKt" alias="ext" />
 
 
@@ -16,6 +21,7 @@
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
+        android:onClick="@{v->listener.showArticleDetails(article)}"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginTop="@dimen/_5sdp"
@@ -100,6 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:layout_marginEnd="@dimen/_5sdp"
+                android:onClick="@{v->listener.shareArticle(article)}"
                 android:src="@drawable/ic_share_black_24dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvDesc" />
@@ -111,6 +118,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:layout_marginEnd="@dimen/_5sdp"
+                android:onClick="@{v->listener.addToFavourite(article)}"
                 android:src="@drawable/ic_bookmark_border_black_24dp"
                 app:layout_constraintEnd_toStartOf="@id/btnShare"
                 app:layout_constraintTop_toBottomOf="@id/tvDesc"

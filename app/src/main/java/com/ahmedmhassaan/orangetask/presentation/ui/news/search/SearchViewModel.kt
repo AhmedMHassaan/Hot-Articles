@@ -9,6 +9,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import com.ahmedmhassaan.domain.models.DomainArticle
+import com.ahmedmhassaan.domain.usecase.AddArticleToFavouriteUseCase
 import com.ahmedmhassaan.domain.usecase.GetSavedLanguageUseCase
 import com.ahmedmhassaan.domain.usecase.LoadCachedArticlesUseCase
 import com.ahmedmhassaan.domain.usecase.SearchForArticlesUseCase
@@ -22,6 +23,7 @@ import javax.inject.Inject
 class SearchViewModel @Inject constructor(
     private val searchForArticlesUseCase: SearchForArticlesUseCase,
     private val loadCachedArticlesUseCase: LoadCachedArticlesUseCase,
+    private val addArticleToFavouriteUseCase: AddArticleToFavouriteUseCase
 //    private val languageUseCase: GetSavedLanguageUseCase
 ) : BaseViewModel() {
 
@@ -34,6 +36,11 @@ class SearchViewModel @Inject constructor(
 
     private val _error = MutableLiveData<String>()
     val error: LiveData<String> = _error
+
+
+    private val _addedToFav = MutableLiveData<Boolean>()
+    val addedToFav: LiveData<Boolean> = _addedToFav
+
 
     init {
 //        search("")
@@ -71,5 +78,20 @@ class SearchViewModel @Inject constructor(
 
         }
 
+    }
+
+    fun addArticleToFavourites(article: DomainArticle) {
+        addArticleToFavouriteUseCase.invoke(article)
+            .dataHandling(
+                success = {
+                    _addedToFav.postValue(it)
+                },
+                showError = {
+                    _error.postValue(it.message.toString())
+                },
+                showLoading = {
+
+                }
+            )
     }
 }

@@ -1,15 +1,19 @@
 package com.ahmedmhassaan.orangetask.presentation.ui.news.search
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.ahmedmhassaan.domain.models.DomainArticle
 import com.ahmedmhassaan.orangetask.R
 import com.ahmedmhassaan.orangetask.databinding.FragmentSearchBinding
 import com.ahmedmhassaan.orangetask.presentation.adapters.ArticlesAdapter
 import com.ahmedmhassaan.orangetask.presentation.base.fragment.BaseBindFragment
+import com.ahmedmhassaan.orangetask.utils.ToastMessage
 import com.ahmedmhassaan.orangetask.utils.setLoading
 import com.ahmedmhassaan.orangetask.utils.setupWithAdapter
 import dagger.hilt.android.AndroidEntryPoint
@@ -52,6 +56,12 @@ class FragmentSearch : BaseBindFragment<FragmentSearchBinding>(), View.OnClickLi
             binding.recViewArticles.setLoading(isLoading = it)
         }
 
+        searchViewModel.addedToFav.observe(viewLifecycleOwner) {
+            if (it) {
+                ToastMessage.success(context, getString(R.string.added_to_fav_successfully))
+            }
+        }
+
     }
 
     private fun events() {
@@ -66,6 +76,45 @@ class FragmentSearch : BaseBindFragment<FragmentSearchBinding>(), View.OnClickLi
                 return false
             }
         })
+
+        articlesAdapter.listener = object : AdapterOnClickEvents {
+            override fun showArticleDetails(article: DomainArticle) {
+                try {
+                    findNavController()
+                        .navigate(
+                            FragmentSearchDirections.actionFragmentSearchToFragmentDetails(
+                                article
+                            )
+                        )
+                } catch (e: Exception) {
+                    ToastMessage.error(context!!, e.message.toString())
+                }
+            }
+
+            override fun addToFavourite(article: DomainArticle) {
+                searchViewModel.addArticleToFavourites(article)
+            }
+
+            override fun shareArticle(article: DomainArticle) {
+                shareArticleToOuterApp(article)
+            }
+        }
+    }
+
+    private fun shareArticleToOuterApp(article: DomainArticle) {
+        val textShare = """
+            ${getString(R.string.title)} : ${article.title},
+        ${getString(R.string.you_can_see_more_on)} : 
+            ${article.url}
+        """.trimIndent()
+
+        val intent = Intent()
+            .setAction(Intent.ACTION_SEND)
+            .putExtra(Intent.EXTRA_TEXT, textShare)
+            .setType("text/plain")
+        val shareIntent = Intent.createChooser(intent, null)
+        startActivity(shareIntent)
+
     }
 
     private fun setupRecycler() {

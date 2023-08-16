@@ -71,7 +71,7 @@ open class BaseFragment() : CoreFragment() {
 
     fun errorToast(message: String?) {
         message?.let {
-            ToastMessage.error(it)
+            ToastMessage.error(requireContext(), it)
         }
     }
 

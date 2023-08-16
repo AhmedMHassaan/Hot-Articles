@@ -11,9 +11,12 @@
     <string name="search">Search</string>
     <string name="title">Title</string>
     <string name="date">Date</string>
-    <string name="content">Content</string>
+    <string name="description">Description</string>
     <string name="author">Author</string>
     <string name="open_in_browser">open in Browser</string>
     <string name="details">Details</string>
     <string name="no_articles_founded">No articles founded</string>
+    <string name="you_can_see_more_on">You can see more details in</string>
+    <string name="added_to_fav_successfully">Added To Favourites</string>
+    <string name="source">Source</string>
 </resources>

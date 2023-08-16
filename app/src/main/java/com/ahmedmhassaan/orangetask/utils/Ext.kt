@@ -1,15 +1,13 @@
 package com.ahmedmhassaan.orangetask.utils
 
+import android.text.util.Linkify
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.BaseAdapter
-import androidx.annotation.IntegerRes
+import android.widget.TextView
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.ahmedmhassaan.domain.models.DomainArticle
-import com.ahmedmhassaan.orangetask.presentation.base.adapters.BaseRecyclerAdapter
 import com.cooltechworks.views.shimmer.ShimmerRecyclerView
 
 fun ViewGroup.inflate(@LayoutRes layoutIntRes: Int): View {
@@ -44,6 +42,10 @@ fun ShimmerRecyclerView.setLoading(
         true -> showShimmerAdapter()
         false -> hideShimmerAdapter()
     }
+}
+
+ fun TextView.linkifyIt() {
+    Linkify.addLinks(this, Linkify.ALL)
 }
 
 

@@ -31,6 +31,7 @@
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/app_name"
                 android:minHeight="@dimen/_150sdp"
+                imageLink="@{article.urlToImage}"
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -90,7 +91,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
-                android:text="@string/content"
+                android:text="@string/description"
                 app:layout_constraintEnd_toEndOf="@id/date_text"
                 app:layout_constraintStart_toStartOf="@id/date_text"
                 app:layout_constraintTop_toBottomOf="@id/date_text" />
@@ -100,7 +101,7 @@
                 style="@style/MainText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@{article.content}"
+                android:text="@{article.description}"
                 app:layout_constraintEnd_toEndOf="@id/desc"
                 app:layout_constraintStart_toStartOf="@id/desc"
                 app:layout_constraintTop_toBottomOf="@id/desc"
@@ -137,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
-                android:text="@string/author"
+                android:text="@string/source"
                 app:layout_constraintEnd_toEndOf="@id/author_text"
                 app:layout_constraintStart_toStartOf="@id/author_text"
                 app:layout_constraintTop_toBottomOf="@id/author_text" />
@@ -166,6 +167,7 @@
                 app:layout_constraintWidth_percent=".6"
                 android:onClick="@{v->listener.onClick(v)}"
                 android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
                 android:id="@+id/btnOpenInBrowser"
                 android:textSize="@dimen/_14ssp"
                 />
