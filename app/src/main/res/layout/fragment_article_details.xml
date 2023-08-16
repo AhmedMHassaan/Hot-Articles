@@ -26,12 +26,12 @@
 
             <ImageView
                 android:id="@+id/detail_photo"
+                imageLink="@{article.urlToImage}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/app_name"
                 android:minHeight="@dimen/_150sdp"
-                imageLink="@{article.urlToImage}"
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -148,29 +148,29 @@
                 style="@style/MainText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@{article.source.name}"
-                app:layout_constraintEnd_toEndOf="@id/author"
-                app:layout_constraintStart_toStartOf="@id/author"
-                app:layout_constraintTop_toBottomOf="@id/author"
+                android:autoLink="all"
                 android:clickable="true"
                 android:focusable="true"
+                android:text="@{article.source.name}"
+                app:layout_constraintEnd_toEndOf="@id/source"
+                app:layout_constraintStart_toStartOf="@id/source"
+                app:layout_constraintTop_toBottomOf="@id/source"
                 tools:text="KEY WORD KKKK" />
 
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOpenInBrowser"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/open_in_browser"
-                app:layout_constraintTop_toBottomOf="@id/source"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintWidth_percent=".6"
-                android:onClick="@{v->listener.onClick(v)}"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:layout_marginBottom="@dimen/_20sdp"
-                android:id="@+id/btnOpenInBrowser"
+                android:onClick="@{v->listener.onClick(v)}"
+                android:text="@string/open_in_browser"
                 android:textSize="@dimen/_14ssp"
-                />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/source_text"
+                app:layout_constraintWidth_percent=".6" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

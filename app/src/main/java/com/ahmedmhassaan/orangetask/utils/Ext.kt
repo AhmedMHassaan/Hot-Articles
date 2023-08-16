@@ -1,5 +1,6 @@
 package com.ahmedmhassaan.orangetask.utils
 
+import android.text.method.LinkMovementMethod
 import android.text.util.Linkify
 import android.view.LayoutInflater
 import android.view.View
@@ -44,8 +45,9 @@ fun ShimmerRecyclerView.setLoading(
     }
 }
 
- fun TextView.linkifyIt() {
+fun TextView.linkifyIt() {
     Linkify.addLinks(this, Linkify.ALL)
+    this.movementMethod = LinkMovementMethod.getInstance()
 }
 
 
