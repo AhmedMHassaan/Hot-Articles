@@ -8,7 +8,7 @@ using news api
 * Retrofit
 * Moudules
 * hilt (DI)
-* Sensor Manager
+* unit testing
 * Data binding
 * Modularisation
 * ROOM for local database caching
@@ -27,7 +27,6 @@ using news api
 <img src="Images/3.jpg" alt="Screen Shot Of Design" style="width:300px;height:600px;">
 <img src="Images/4.jpg" alt="Screen Shot Of Design" style="width:300px;height:600px;">
 <img src="Images/5.jpg" alt="Screen Shot Of Design" style="width:300px;height:600px;">
-<img src="Images/6.jpg" alt="Screen Shot Of Design" style="width:300px;height:600px;">
 <img src="Images/7.jpg" alt="Screen Shot Of Design" style="width:300px;height:600px;">
 
 
