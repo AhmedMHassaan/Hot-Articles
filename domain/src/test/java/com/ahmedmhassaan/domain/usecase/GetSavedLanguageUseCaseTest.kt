@@ -25,5 +25,5 @@ class GetSavedLanguageUseCaseTest {
         repository.saveLanguage(currentLanguage)
         val savedLanguage = getSavedLanguageUseCase.execute()
         Truth.assertThat(savedLanguage).isEqualTo(currentLanguage)
-    }
+    }   
 }
