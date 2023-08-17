@@ -13,21 +13,24 @@ import org.junit.Test
 class LanguageRepositoryImplTest {
 
     private lateinit var languageRepository: LanguageRepository
-    private lateinit var dataSource: LanguageDataSource
-    private lateinit var langPref: LanguageSharedPreferences
+
+    //    private lateinit var dataSource: LanguageDataSource
+//    private lateinit var langPref: LanguageSharedPreferences
     private lateinit var context: Context
 
     @Before
     fun setUp() {
         context = ApplicationProvider.getApplicationContext<Context?>().applicationContext
-        langPref = LanguageSharedPreferences(context)
-        dataSource = LanguageDataSource(langPref)
-        languageRepository = LanguageRepositoryImpl(dataSource)
+        languageRepository = LanguageRepositoryImpl(
+            LanguageDataSource(
+                LanguageSharedPreferences(context)
+            )
+        )
     }
 
 
     @Test
-    fun testLanguageBeforeSavingNewOne_returnEmptyString(){
+    fun testLanguageBeforeSavingNewOne_returnEmptyString() {
         val lang = languageRepository.getSavedLanguage()
         assertThat(lang).isEmpty()
     }
