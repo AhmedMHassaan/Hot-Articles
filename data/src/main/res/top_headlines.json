@@ -1,0 +1,266 @@
+﻿{
+    "status": "ok",
+    "totalResults": 34,
+    "articles": [
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Al Masry Al Youm - المصري اليوم",
+            "title": "مصدر مطلع: الطائرة الخاصة التي توجهت من مطار القاهرة إلى زامبيا لا تحمل الجنسية المصرية - Al Masry Al Youm - المصري اليوم",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMiMmh0dHBzOi8vd3d3LmFsbWFzcnlhbHlvdW0uY29tL25ld3MvZGV0YWlscy8yOTU4NzAz0gEA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T11:58:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "العربية",
+            "title": "النفط يستقر مع معادلة مخاوف النمو الصيني لأثر توقعات شح الإمدادات الأميركية - العربية",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMizgJodHRwczovL3d3dy5hbGFyYWJpeWEubmV0L2Fzd2FxL29pbC1hbmQtZ2FzLzIwMjMvMDgvMTYvJUQ4JUE3JUQ5JTg0JUQ5JTg2JUQ5JTgxJUQ4JUI3LSVEOSU4NSVEOCVCMyVEOCVBQSVEOSU4MiVEOCVCMS0lRDklODElRDklOEEtJUQ4JUI4JUQ5JTg0LSVEOCVBOCVEOSU4QSVEOCVBNyVEOSU4NiVEOCVBNyVEOCVBQS0lRDglQjUlRDklOEElRDklODYlRDklOEElRDglQTktJUQ4JUI2JUQ4JUI5JUQ5JThBJUQ5JTgxJUQ4JUE5LSVEOSU4OCVEOCVCNCVEOCVBRC0lRDglQTclRDklODUlRDglQUYlRDglQTclRDglQUYlRDglQTclRDglQUEtJUQ4JUE3JUQ5JTg0JUQ4JUFFJUQ4JUE3JUQ5JTg10gHSAmh0dHBzOi8vd3d3LmFsYXJhYml5YS5uZXQvYW1wL2Fzd2FxL29pbC1hbmQtZ2FzLzIwMjMvMDgvMTYvJUQ4JUE3JUQ5JTg0JUQ5JTg2JUQ5JTgxJUQ4JUI3LSVEOSU4NSVEOCVCMyVEOCVBQSVEOSU4MiVEOCVCMS0lRDklODElRDklOEEtJUQ4JUI4JUQ5JTg0LSVEOCVBOCVEOSU4QSVEOCVBNyVEOSU4NiVEOCVBNyVEOCVBQS0lRDglQjUlRDklOEElRDklODYlRDklOEElRDglQTktJUQ4JUI2JUQ4JUI5JUQ5JThBJUQ5JTgxJUQ4JUE5LSVEOSU4OCVEOCVCNCVEOCVBRC0lRDglQTclRDklODUlRDglQUYlRDglQTclRDglQUYlRDglQTclRDglQUEtJUQ4JUE3JUQ5JTg0JUQ4JUFFJUQ4JUE3JUQ5JTg1?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T11:37:14Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "أخبار الرياضة - سكاي نيوز عربية Sky News Arabia Sports",
+            "title": "قبل لقائهما المرتقب 30 نوفمبر.. ماذا قال نيمار عن رونالدو؟ - أخبار الرياضة - سكاي نيوز عربية Sky News Arabia Sports",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMikgJodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS9zcG9ydC8xNjQ1NTgwLSVEOSU4NCVEOSU4MiVEOCVBNyVEOSU4QSVEOSU5NCVEOSU4NyVEOSU4NSVEOCVBNy0lRDglQTclRDklODQlRDklODUlRDglQjElRDglQUElRDklODIlRDglQTgtMzAtJUQ5JTg2JUQ5JTg4JUQ5JTgxJUQ5JTg1JUQ4JUE4JUQ4JUIxLSVEOSU4MiVEOCVBNyVEOSU4NC0lRDklODYlRDklOEElRDklODUlRDglQTclRDglQjEtJUQ4JUIxJUQ5JTg4JUQ5JTg2JUQ4JUE3JUQ5JTg0JUQ4JUFGJUQ5JTg4JUQ4JTlG0gGWAmh0dHBzOi8vd3d3LnNreW5ld3NhcmFiaWEuY29tL2FtcC9zcG9ydC8xNjQ1NTgwLSVEOSU4NCVEOSU4MiVEOCVBNyVEOSU4QSVEOSU5NCVEOSU4NyVEOSU4NSVEOCVBNy0lRDglQTclRDklODQlRDklODUlRDglQjElRDglQUElRDklODIlRDglQTgtMzAtJUQ5JTg2JUQ5JTg4JUQ5JTgxJUQ5JTg1JUQ4JUE4JUQ4JUIxLSVEOSU4MiVEOCVBNyVEOSU4NC0lRDklODYlRDklOEElRDklODUlRDglQTclRDglQjEtJUQ4JUIxJUQ5JTg4JUQ5JTg2JUQ4JUE3JUQ5JTg0JUQ4JUFGJUQ5JTg4JUQ4JTlG?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T10:42:44Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "الحرة",
+            "title": "\"معاش تأميني بالدولار\".. هل ينجح في جذب أموال المصريين بالخارج؟ - الحرة",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMi0QJodHRwczovL3d3dy5hbGh1cnJhLmNvbS9lZ3lwdC8yMDIzLzA4LzE2LyVEOSU4NSVEOCVCOSVEOCVBNyVEOCVCNC0lRDglQUElRDglQTMlRDklODUlRDklOEElRDklODYlRDklOEEtJUQ4JUE4JUQ4JUE3JUQ5JTg0JUQ4JUFGJUQ5JTg4JUQ5JTg0JUQ4JUE3JUQ4JUIxLSVEOSU4QSVEOSU4NiVEOCVBQyVEOCVBRC0lRDklODElRDklOEEtJUQ4JUFDJUQ4JUIwJUQ4JUE4LSVEOCVBMyVEOSU4NSVEOSU4OCVEOCVBNyVEOSU4NC0lRDglQTclRDklODQlRDklODUlRDglQjUlRDglQjElRDklOEElRDklOEElRDklODYtJUQ4JUE4JUQ4JUE3JUQ5JTg0JUQ4JUFFJUQ4JUE3JUQ4JUIxJUQ4JUFDJUQ4JTlG0gHVAmh0dHBzOi8vd3d3LmFsaHVycmEuY29tL2VneXB0LzIwMjMvMDgvMTYvJUQ5JTg1JUQ4JUI5JUQ4JUE3JUQ4JUI0LSVEOCVBQSVEOCVBMyVEOSU4NSVEOSU4QSVEOSU4NiVEOSU4QS0lRDglQTglRDglQTclRDklODQlRDglQUYlRDklODglRDklODQlRDglQTclRDglQjEtJUQ5JThBJUQ5JTg2JUQ4JUFDJUQ4JUFELSVEOSU4MSVEOSU4QS0lRDglQUMlRDglQjAlRDglQTgtJUQ4JUEzJUQ5JTg1JUQ5JTg4JUQ4JUE3JUQ5JTg0LSVEOCVBNyVEOSU4NCVEOSU4NSVEOCVCNSVEOCVCMSVEOSU4QSVEOSU4QSVEOSU4Ni0lRDglQTglRDglQTclRDklODQlRDglQUUlRDglQTclRDglQjElRDglQUMlRDglOUY_YW1w?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T10:39:24Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "اليوم السابع",
+            "title": "أسعار السبائك الذهب فى مصر اليوم الأربعاء 16 أغسطس 2023 - اليوم السابع",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMirQJodHRwczovL3d3dy55b3VtNy5jb20vc3RvcnkvMjAyMy84LzE2LyVEOCVBMyVEOCVCMyVEOCVCOSVEOCVBNyVEOCVCMS0lRDglQTclRDklODQlRDglQjMlRDglQTglRDglQTclRDglQTYlRDklODMtJUQ4JUE3JUQ5JTg0JUQ4JUIwJUQ5JTg3JUQ4JUE4LSVEOSU4MSVEOSU4OS0lRDklODUlRDglQjUlRDglQjEtJUQ4JUE3JUQ5JTg0JUQ5JThBJUQ5JTg4JUQ5JTg1LSVEOCVBNyVEOSU4NCVEOCVBMyVEOCVCMSVEOCVBOCVEOCVCOSVEOCVBNyVEOCVBMS0xNi0lRDglQTMlRDglQkElRDglQjMlRDglQjclRDglQjMtMjAyMy82Mjc0MjY50gGpAmh0dHBzOi8vbS55b3VtNy5jb20vYW1wLzIwMjMvOC8xNi8lRDglQTMlRDglQjMlRDglQjklRDglQTclRDglQjEtJUQ4JUE3JUQ5JTg0JUQ4JUIzJUQ4JUE4JUQ4JUE3JUQ4JUE2JUQ5JTgzLSVEOCVBNyVEOSU4NCVEOCVCMCVEOSU4NyVEOCVBOC0lRDklODElRDklODktJUQ5JTg1JUQ4JUI1JUQ4JUIxLSVEOCVBNyVEOSU4NCVEOSU4QSVEOSU4OCVEOSU4NS0lRDglQTclRDklODQlRDglQTMlRDglQjElRDglQTglRDglQjklRDglQTclRDglQTEtMTYtJUQ4JUEzJUQ4JUJBJUQ4JUIzJUQ4JUI3JUQ4JUIzLTIwMjMvNjI3NDI2OQ?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T10:08:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "اليوم السابع",
+            "title": "فيرمينو أفضل لاعب فى الجولة الأولى من الدورى السعودي والأعلى تقييمًا - اليوم السابع",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMi6QJodHRwczovL3d3dy55b3VtNy5jb20vc3RvcnkvMjAyMy84LzE2LyVEOSU4MSVEOSU4QSVEOCVCMSVEOSU4NSVEOSU4QSVEOSU4NiVEOSU4OC0lRDglQTMlRDklODElRDglQjYlRDklODQtJUQ5JTg0JUQ4JUE3JUQ4JUI5JUQ4JUE4LSVEOSU4MSVEOSU4OS0lRDglQTclRDklODQlRDglQUMlRDklODglRDklODQlRDglQTktJUQ4JUE3JUQ5JTg0JUQ4JUEzJUQ5JTg4JUQ5JTg0JUQ5JTg5LSVEOSU4NSVEOSU4Ni0lRDglQTclRDklODQlRDglQUYlRDklODglRDglQjElRDklODktJUQ4JUE3JUQ5JTg0JUQ4JUIzJUQ4JUI5JUQ5JTg4JUQ4JUFGJUQ5JThBLSVEOSU4OCVEOCVBNyVEOSU4NCVEOCVBMyVEOCVCOSVEOSU4NCVEOSU4OS82Mjc0MTc30gHlAmh0dHBzOi8vbS55b3VtNy5jb20vYW1wLzIwMjMvOC8xNi8lRDklODElRDklOEElRDglQjElRDklODUlRDklOEElRDklODYlRDklODgtJUQ4JUEzJUQ5JTgxJUQ4JUI2JUQ5JTg0LSVEOSU4NCVEOCVBNyVEOCVCOSVEOCVBOC0lRDklODElRDklODktJUQ4JUE3JUQ5JTg0JUQ4JUFDJUQ5JTg4JUQ5JTg0JUQ4JUE5LSVEOCVBNyVEOSU4NCVEOCVBMyVEOSU4OCVEOSU4NCVEOSU4OS0lRDklODUlRDklODYtJUQ4JUE3JUQ5JTg0JUQ4JUFGJUQ5JTg4JUQ4JUIxJUQ5JTg5LSVEOCVBNyVEOSU4NCVEOCVCMyVEOCVCOSVEOSU4OCVEOCVBRiVEOSU4QS0lRDklODglRDglQTclRDklODQlRDglQTMlRDglQjklRDklODQlRDklODkvNjI3NDE3Nw?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T09:32:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Yallakora - يلاكورة",
+            "title": "وليد الفراج: ليفربول وافق على مناقشة عرض صلاح.. وعائق وحيد للصفقة - Yallakora - يلاكورة",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMi-AJodHRwczovL3d3dy55YWxsYWtvcmEuY29tL2tzYS1sZWFndWUvMjg0Mi9uZXdzLzQ1MzcwNC8lRDklODglRDklODQlRDklOEElRDglQUYtJUQ4JUE3JUQ5JTg0JUQ5JTgxJUQ4JUIxJUQ4JUE3JUQ4JUFDLSVEOSU4NCVEOSU4QSVEOSU4MSVEOCVCMSVEOCVBOCVEOSU4OCVEOSU4NC0lRDklODglRDglQTclRDklODElRDklODItJUQ4JUI5JUQ5JTg0JUQ5JTg5LSVEOSU4NSVEOSU4NiVEOCVBNyVEOSU4MiVEOCVCNCVEOCVBOS0lRDglQjklRDglQjElRDglQjYtJUQ4JUI1JUQ5JTg0JUQ4JUE3JUQ4JUFELSVEOSU4OCVEOCVCOSVEOCVBNyVEOCVBNiVEOSU4Mi0lRDklODglRDglQUQlRDklOEElRDglQUYtJUQ5JTg0JUQ5JTg0JUQ4JUI1JUQ5JTgxJUQ5JTgyJUQ4JUE50gH8Amh0dHBzOi8vd3d3LnlhbGxha29yYS5jb20va3NhLWxlYWd1ZS8yODQyL25ld3MvNDUzNzA0LyVEOSU4OCVEOSU4NCVEOSU4QSVEOCVBRi0lRDglQTclRDklODQlRDklODElRDglQjElRDglQTclRDglQUMtJUQ5JTg0JUQ5JThBJUQ5JTgxJUQ4JUIxJUQ4JUE4JUQ5JTg4JUQ5JTg0LSVEOSU4OCVEOCVBNyVEOSU4MSVEOSU4Mi0lRDglQjklRDklODQlRDklODktJUQ5JTg1JUQ5JTg2JUQ4JUE3JUQ5JTgyJUQ4JUI0JUQ4JUE5LSVEOCVCOSVEOCVCMSVEOCVCNi0lRDglQjUlRDklODQlRDglQTclRDglQUQtJUQ5JTg4JUQ4JUI5JUQ4JUE3JUQ4JUE2JUQ5JTgyLSVEOSU4OCVEOCVBRCVEOSU4QSVEOCVBRi0lRDklODQlRDklODQlRDglQjUlRDklODElRDklODIlRDglQTk_YW1w?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T09:03:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "صحيفة البيان",
+            "title": "سعر الدولار اليوم مقابل الجنيه المصري يعاود الارتفاع - صحيفة البيان",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMiOGh0dHBzOi8vd3d3LmFsYmF5YW4uYWUvZWNvbm9teS9hcmFiLzIwMjMtMDgtMTYtMS40NzExMDc10gFMaHR0cHM6Ly93d3cuYWxiYXlhbi5hZS9lY29ub215L2FyYWIvMjAyMy0wOC0xNi0xLjQ3MTEwNzU_b3Q9b3QuQU1QUGFnZUxheW91dA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T08:50:22Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "السعودية Investing.com",
+            "title": "عاجل: الذهب يتحول بعد سقوطه أدنى مستوى الدعم الرئيسي.. ويترقب محضر الفيدرالي بواسطة Investing.com - السعودية Investing.com",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMiPmh0dHBzOi8vc2EuaW52ZXN0aW5nLmNvbS9uZXdzL2NvbW1vZGl0aWVzLW5ld3MvYXJ0aWNsZS0yNDUwNzY10gEA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T07:10:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "اليوم السابع",
+            "title": "ميسى يقود إنتر ميامي إلى كونكاكاف لأول مرة ويتصدر ترتيب هدافى كأس الدوريات - اليوم السابع",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMiywJodHRwczovL3d3dy55b3VtNy5jb20vc3RvcnkvMjAyMy84LzE2LyVEOSU4NSVEOSU4QSVEOCVCMyVEOSU4OS0lRDklOEElRDklODIlRDklODglRDglQUYtJUQ4JUE1JUQ5JTg2JUQ4JUFBJUQ4JUIxLSVEOSU4NSVEOSU4QSVEOCVBNyVEOSU4NSVEOSU4QS0lRDglQTUlRDklODQlRDklODktJUQ5JTgzJUQ5JTg4JUQ5JTg2JUQ5JTgzJUQ4JUE3JUQ5JTgzJUQ4JUE3JUQ5JTgxLSVEOSU4NCVEOCVBMyVEOSU4OCVEOSU4NC0lRDklODUlRDglQjElRDglQTktJUQ5JTg4JUQ5JThBJUQ4JUFBJUQ4JUI1JUQ4JUFGJUQ4JUIxLSVEOCVBQSVEOCVCMSVEOCVBQSVEOSU4QSVEOCVBOC82MjczODk00gHHAmh0dHBzOi8vbS55b3VtNy5jb20vYW1wLzIwMjMvOC8xNi8lRDklODUlRDklOEElRDglQjMlRDklODktJUQ5JThBJUQ5JTgyJUQ5JTg4JUQ4JUFGLSVEOCVBNSVEOSU4NiVEOCVBQSVEOCVCMS0lRDklODUlRDklOEElRDglQTclRDklODUlRDklOEEtJUQ4JUE1JUQ5JTg0JUQ5JTg5LSVEOSU4MyVEOSU4OCVEOSU4NiVEOSU4MyVEOCVBNyVEOSU4MyVEOCVBNyVEOSU4MS0lRDklODQlRDglQTMlRDklODglRDklODQtJUQ5JTg1JUQ4JUIxJUQ4JUE5LSVEOSU4OCVEOSU4QSVEOCVBQSVEOCVCNSVEOCVBRiVEOCVCMS0lRDglQUElRDglQjElRDglQUElRDklOEElRDglQTgvNjI3Mzg5NA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T07:08:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Sky News Arabia سكاي نيوز عربية",
+            "title": "بعد مرور 20 يومًا.. هل أصبح انقلاب النيجر واقعاً؟ - Sky News Arabia سكاي نيوز عربية",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMi-gFodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS93b3JsZC8xNjQ1NDgyLSVEOSU4NSVEOCVCMSVEOSU4OCVEOCVCMS0yMC0lRDklOEElRDklODglRDklODUlRDklOEIlRDglQTctJUQ4JUE3JUQ5JTk0JUQ4JUI1JUQ4JUE4JUQ4JUFELSVEOCVBNyVEOSU4NiVEOSU4MiVEOSU4NCVEOCVBNyVEOCVBOC0lRDglQTclRDklODQlRDklODYlRDklOEElRDglQUMlRDglQjEtJUQ5JTg4JUQ4JUE3JUQ5JTgyJUQ4JUI5JUQ4JUE3JUQ5JThCJUQ4JTlG0gH-AWh0dHBzOi8vd3d3LnNreW5ld3NhcmFiaWEuY29tL2FtcC93b3JsZC8xNjQ1NDgyLSVEOSU4NSVEOCVCMSVEOSU4OCVEOCVCMS0yMC0lRDklOEElRDklODglRDklODUlRDklOEIlRDglQTctJUQ4JUE3JUQ5JTk0JUQ4JUI1JUQ4JUE4JUQ4JUFELSVEOCVBNyVEOSU4NiVEOSU4MiVEOSU4NCVEOCVBNyVEOCVBOC0lRDglQTclRDklODQlRDklODYlRDklOEElRDglQUMlRDglQjEtJUQ5JTg4JUQ4JUE3JUQ5JTgyJUQ4JUI5JUQ4JUE3JUQ5JThCJUQ4JTlG?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T07:00:14Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "اليوم السابع",
+            "title": "تنسيق الجامعات 2023.. كليات الجامعات الخاصة والأهلية تقبل الطلاب من 53% - اليوم السابع",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMi8wJodHRwczovL3d3dy55b3VtNy5jb20vc3RvcnkvMjAyMy84LzE2LyVEOCVBQSVEOSU4NiVEOCVCMyVEOSU4QSVEOSU4Mi0lRDglQTclRDklODQlRDglQUMlRDglQTclRDklODUlRDglQjklRDglQTclRDglQUEtMjAyMy0lRDklODMlRDklODQlRDklOEElRDglQTclRDglQUEtJUQ4JUE3JUQ5JTg0JUQ4JUFDJUQ4JUE3JUQ5JTg1JUQ4JUI5JUQ4JUE3JUQ4JUFBLSVEOCVBNyVEOSU4NCVEOCVBRSVEOCVBNyVEOCVCNSVEOCVBOS0lRDklODglRDglQTclRDklODQlRDglQTMlRDklODclRDklODQlRDklOEElRDglQTktJUQ4JUFBJUQ5JTgyJUQ4JUE4JUQ5JTg0LSVEOCVBNyVEOSU4NCVEOCVCNyVEOSU4NCVEOCVBNyVEOCVBOC0lRDklODUlRDklODYvNjI3Mzg2N9IB7wJodHRwczovL20ueW91bTcuY29tL2FtcC8yMDIzLzgvMTYvJUQ4JUFBJUQ5JTg2JUQ4JUIzJUQ5JThBJUQ5JTgyLSVEOCVBNyVEOSU4NCVEOCVBQyVEOCVBNyVEOSU4NSVEOCVCOSVEOCVBNyVEOCVBQS0yMDIzLSVEOSU4MyVEOSU4NCVEOSU4QSVEOCVBNyVEOCVBQS0lRDglQTclRDklODQlRDglQUMlRDglQTclRDklODUlRDglQjklRDglQTclRDglQUEtJUQ4JUE3JUQ5JTg0JUQ4JUFFJUQ4JUE3JUQ4JUI1JUQ4JUE5LSVEOSU4OCVEOCVBNyVEOSU4NCVEOCVBMyVEOSU4NyVEOSU4NCVEOSU4QSVEOCVBOS0lRDglQUElRDklODIlRDglQTglRDklODQtJUQ4JUE3JUQ5JTg0JUQ4JUI3JUQ5JTg0JUQ4JUE3JUQ4JUE4LSVEOSU4NSVEOSU4Ni82MjczODY3?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T06:25:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "العربية",
+            "title": "التركيز لا يعتمد على إرادتك.. العقل يقود - العربية",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMi9QFodHRwczovL3d3dy5hbGFyYWJpeWEubmV0L2xhc3QtcGFnZS8yMDIzLzA4LzE2LyVEOCVBNyVEOSU4NCVEOCVBQSVEOCVCMSVEOSU4MyVEOSU4QSVEOCVCMi0lRDklODQlRDglQTctJUQ5JThBJUQ4JUI5JUQ4JUFBJUQ5JTg1JUQ4JUFGLSVEOCVCOSVEOSU4NCVEOSU4OS0lRDglQTclRDglQjElRDglQTclRDglQUYlRDglQUElRDklODMtJUQ4JUE3JUQ5JTg0JUQ4JUI5JUQ5JTgyJUQ5JTg0LSVEOSU4QSVEOSU4MiVEOSU4OCVEOCVBRtIB-QFodHRwczovL3d3dy5hbGFyYWJpeWEubmV0L2FtcC9sYXN0LXBhZ2UvMjAyMy8wOC8xNi8lRDglQTclRDklODQlRDglQUElRDglQjElRDklODMlRDklOEElRDglQjItJUQ5JTg0JUQ4JUE3LSVEOSU4QSVEOCVCOSVEOCVBQSVEOSU4NSVEOCVBRi0lRDglQjklRDklODQlRDklODktJUQ4JUE3JUQ4JUIxJUQ4JUE3JUQ4JUFGJUQ4JUFBJUQ5JTgzLSVEOCVBNyVEOSU4NCVEOCVCOSVEOSU4MiVEOSU4NC0lRDklOEElRDklODIlRDklODglRDglQUY?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T06:14:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Sky News Arabia سكاي نيوز عربية",
+            "title": "روسيا: إسقاط مسيّرات أوكرانية جنوب غربي موسكو - Sky News Arabia سكاي نيوز عربية",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMiogJodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS93b3JsZC8xNjQ1NDc0LSVEOCVCMSVEOSU4OCVEOCVCMyVEOSU4QSVEOCVBNy0lRDglQTclRDklOTUlRDglQjMlRDklODIlRDglQTclRDglQjctJUQ5JTg1JUQ4JUIzJUQ5JThBJUQ5JTkxJUQ4JUIxJUQ4JUE3JUQ4JUFBLSVEOCVBNyVEOSU5NCVEOSU4OCVEOSU4MyVEOCVCMSVEOCVBNyVEOSU4NiVEOSU4QSVEOCVBOS0lRDglQUMlRDklODYlRDklODglRDglQTgtJUQ4JUJBJUQ4JUIxJUQ4JUE4JUQ5JThBLSVEOSU4NSVEOSU4OCVEOCVCMyVEOSU4MyVEOSU4ONIBpgJodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS9hbXAvd29ybGQvMTY0NTQ3NC0lRDglQjElRDklODglRDglQjMlRDklOEElRDglQTctJUQ4JUE3JUQ5JTk1JUQ4JUIzJUQ5JTgyJUQ4JUE3JUQ4JUI3LSVEOSU4NSVEOCVCMyVEOSU4QSVEOSU5MSVEOCVCMSVEOCVBNyVEOCVBQS0lRDglQTclRDklOTQlRDklODglRDklODMlRDglQjElRDglQTclRDklODYlRDklOEElRDglQTktJUQ4JUFDJUQ5JTg2JUQ5JTg4JUQ4JUE4LSVEOCVCQSVEOCVCMSVEOCVBOCVEOSU4QS0lRDklODUlRDklODglRDglQjMlRDklODMlRDklODg?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T06:04:02Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "العربية",
+            "title": "اصطفاف جمهوري خلف ترمب والاتهامات تزيد حدة الانقسام في أميركا - العربية",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMijgNodHRwczovL3d3dy5hbGFyYWJpeWEubmV0L2FyYWItYW5kLXdvcmxkL2FtZXJpY2FuLWVsZWN0aW9ucy0yMDE2LzIwMjMvMDgvMTYvJUQ4JUE3JUQ4JUI1JUQ4JUI3JUQ5JTgxJUQ4JUE3JUQ5JTgxLSVEOCVBQyVEOSU4NSVEOSU4NyVEOSU4OCVEOCVCMSVEOSU4QS0lRDglQUUlRDklODQlRDklODEtJUQ4JUFBJUQ4JUIxJUQ5JTg1JUQ4JUE4LSVEOSU4OCVEOCVBNyVEOSU4NCVEOCVBNyVEOCVBQSVEOSU4NyVEOCVBNyVEOSU4NSVEOCVBNyVEOCVBQS0lRDglQUElRDglQjIlRDklOEElRDglQUYtJUQ4JUFEJUQ4JUFGJUQ4JUE5LSVEOCVBNyVEOSU4NCVEOCVBNyVEOSU4NiVEOSU4MiVEOCVCMyVEOCVBNyVEOSU4NS0lRDklODElRDklOEEtJUQ4JUEzJUQ5JTg1JUQ5JThBJUQ4JUIxJUQ5JTgzJUQ4JUE3LdIBkgNodHRwczovL3d3dy5hbGFyYWJpeWEubmV0L2FtcC9hcmFiLWFuZC13b3JsZC9hbWVyaWNhbi1lbGVjdGlvbnMtMjAxNi8yMDIzLzA4LzE2LyVEOCVBNyVEOCVCNSVEOCVCNyVEOSU4MSVEOCVBNyVEOSU4MS0lRDglQUMlRDklODUlRDklODclRDklODglRDglQjElRDklOEEtJUQ4JUFFJUQ5JTg0JUQ5JTgxLSVEOCVBQSVEOCVCMSVEOSU4NSVEOCVBOC0lRDklODglRDglQTclRDklODQlRDglQTclRDglQUElRDklODclRDglQTclRDklODUlRDglQTclRDglQUEtJUQ4JUFBJUQ4JUIyJUQ5JThBJUQ4JUFGLSVEOCVBRCVEOCVBRiVEOCVBOS0lRDglQTclRDklODQlRDglQTclRDklODYlRDklODIlRDglQjMlRDglQTclRDklODUtJUQ5JTgxJUQ5JThBLSVEOCVBMyVEOSU4NSVEOSU4QSVEOCVCMSVEOSU4MyVEOCVBNy0?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T05:47:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Sky News Arabia سكاي نيوز عربية",
+            "title": "ارتفاع عدد قتلى اشتباكات طرابلس.. وحديث عن هدوء نسبي - Sky News Arabia سكاي نيوز عربية",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMiqQJodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS9taWRkbGUtZWFzdC8xNjQ1NDcwLSVEOCVBNyVEOCVCMSVEOCVBQSVEOSU4MSVEOCVBNyVEOCVCOS0lRDglQjklRDglQUYlRDglQUYtJUQ5JTgyJUQ4JUFBJUQ5JTg0JUQ5JTg5LSVEOCVBNyVEOCVCNCVEOCVBQSVEOCVBOCVEOCVBNyVEOSU4MyVEOCVBNyVEOCVBQS0lRDglQjclRDglQjElRDglQTclRDglQTglRDklODQlRDglQjMtJUQ5JTg4JUQ4JUFEJUQ4JUFGJUQ5JThBJUQ4JUFCLSVEOSU4NyVEOCVBRiVEOSU4OCVEOCVBMS0lRDklODYlRDglQjMlRDglQTglRDklOEHSAa0CaHR0cHM6Ly93d3cuc2t5bmV3c2FyYWJpYS5jb20vYW1wL21pZGRsZS1lYXN0LzE2NDU0NzAtJUQ4JUE3JUQ4JUIxJUQ4JUFBJUQ5JTgxJUQ4JUE3JUQ4JUI5LSVEOCVCOSVEOCVBRiVEOCVBRi0lRDklODIlRDglQUElRDklODQlRDklODktJUQ4JUE3JUQ4JUI0JUQ4JUFBJUQ4JUE4JUQ4JUE3JUQ5JTgzJUQ4JUE3JUQ4JUFBLSVEOCVCNyVEOCVCMSVEOCVBNyVEOCVBOCVEOSU4NCVEOCVCMy0lRDklODglRDglQUQlRDglQUYlRDklOEElRDglQUItJUQ5JTg3JUQ4JUFGJUQ5JTg4JUQ4JUExLSVEOSU4NiVEOCVCMyVEOCVBOCVEOSU4QQ?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T05:42:02Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "نجوم مصرية",
+            "title": "\"الرائد لعالم الإتصالات والتكنولوجيا\".. سعر ومواصفات هاتف Samsung Galaxy A54 5G - نجوم مصرية",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMi3wFodHRwczovL3d3dy5uZ21pc3IuY29tL3RlY2gvJUQ4JUE3JUQ5JTg0JUQ4JUIxJUQ4JUE3JUQ4JUE2JUQ4JUFGLSVEOSU4NCVEOCVCOSVEOCVBNyVEOSU4NCVEOSU4NS0lRDglQTclRDklODQlRDglQTUlRDglQUElRDglQjUlRDglQTclRDklODQlRDglQTclRDglQUEtJUQ5JTg4JUQ4JUE3JUQ5JTg0JUQ4JUFBJUQ5JTgzJUQ5JTg2JUQ5JTg4JUQ5JTg0JUQ5JTg4JUQ4JUFDJUQ5JThBJUQ4JUE30gEA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T05:14:23Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "العربية",
+            "title": "محرقة هاواي تحصد 106 قتلى.. التعرف على 4 ضحايا فقط - العربية",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMisgJodHRwczovL3d3dy5hbGFyYWJpeWEubmV0L2FyYWItYW5kLXdvcmxkL2FtZXJpY2FuLWVsZWN0aW9ucy0yMDE2LzIwMjMvMDgvMTYvJUQ5JTg1JUQ4JUFEJUQ4JUIxJUQ5JTgyJUQ4JUE5LSVEOSU4NyVEOCVBNyVEOSU4OCVEOCVBNyVEOSU4QS0lRDglQUElRDglQUQlRDglQjUlRDglQUYtMTAxLSVEOSU4MiVEOCVBQSVEOSU4QSVEOSU4NCVEOCVBNy0lRDglQTclRDklODQlRDglQUElRDglQjklRDglQjElRDklODEtJUQ4JUI5JUQ5JTg0JUQ5JTg5LTQtJUQ4JUI2JUQ4JUFEJUQ4JUE3JUQ5JThBJUQ4JUE3LSVEOSU4MSVEOSU4MiVEOCVCNy3SAbYCaHR0cHM6Ly93d3cuYWxhcmFiaXlhLm5ldC9hbXAvYXJhYi1hbmQtd29ybGQvYW1lcmljYW4tZWxlY3Rpb25zLTIwMTYvMjAyMy8wOC8xNi8lRDklODUlRDglQUQlRDglQjElRDklODIlRDglQTktJUQ5JTg3JUQ4JUE3JUQ5JTg4JUQ4JUE3JUQ5JThBLSVEOCVBQSVEOCVBRCVEOCVCNSVEOCVBRi0xMDEtJUQ5JTgyJUQ4JUFBJUQ5JThBJUQ5JTg0JUQ4JUE3LSVEOCVBNyVEOSU4NCVEOCVBQSVEOCVCOSVEOCVCMSVEOSU4MS0lRDglQjklRDklODQlRDklODktNC0lRDglQjYlRDglQUQlRDglQTclRDklOEElRDglQTctJUQ5JTgxJUQ5JTgyJUQ4JUI3LQ?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T04:29:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Sky News Arabia سكاي نيوز عربية",
+            "title": "صعود السلالم يقلل خطر الإصابة بـ10 سرطانات خطيرة - Sky News Arabia سكاي نيوز عربية",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMiqgJodHRwczovL3d3dy5za3luZXdzYXJhYmlhLmNvbS90ZWNobm9sb2d5LzE2NDU0NTMtJUQ4JUI1JUQ4JUI5JUQ5JTg4JUQ4JUFGLSVEOCVBNyVEOSU4NCVEOCVCMyVEOSU4NCVEOCVBNyVEOSU4NCVEOSU4NS0lRDklOEElRDklODIlRDklODQlRDklODQtJUQ4JUFFJUQ4JUI3JUQ4JUIxLSVEOCVBNyVEOSU4NCVEOCVBNyVEOSU5NSVEOCVCNSVEOCVBNyVEOCVBOCVEOCVBOS0lRDglQTglRDklODAxMC0lRDglQjMlRDglQjElRDglQjclRDglQTclRDklODYlRDglQTclRDglQUEtJUQ4JUFFJUQ4JUI3JUQ5JThBJUQ4JUIxJUQ4JUE50gGuAmh0dHBzOi8vd3d3LnNreW5ld3NhcmFiaWEuY29tL2FtcC90ZWNobm9sb2d5LzE2NDU0NTMtJUQ4JUI1JUQ4JUI5JUQ5JTg4JUQ4JUFGLSVEOCVBNyVEOSU4NCVEOCVCMyVEOSU4NCVEOCVBNyVEOSU4NCVEOSU4NS0lRDklOEElRDklODIlRDklODQlRDklODQtJUQ4JUFFJUQ4JUI3JUQ4JUIxLSVEOCVBNyVEOSU4NCVEOCVBNyVEOSU5NSVEOCVCNSVEOCVBNyVEOCVBOCVEOCVBOS0lRDglQTglRDklODAxMC0lRDglQjMlRDglQjElRDglQjclRDglQTclRDklODYlRDglQTclRDglQUEtJUQ4JUFFJUQ4JUI3JUQ5JThBJUQ4JUIxJUQ4JUE5?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T04:16:49Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Al Masry Al Youm - المصري اليوم",
+            "title": "بعد تصريحات مادلين طبر .. عادل إمام الحاضر دائمًا (تقرير) - Al Masry Al Youm - المصري اليوم",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMiMmh0dHBzOi8vd3d3LmFsbWFzcnlhbHlvdW0uY29tL25ld3MvZGV0YWlscy8yOTU4NDAx0gEA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-08-16T03:56:00Z",
+            "content": null
+        }
+    ]
+}
